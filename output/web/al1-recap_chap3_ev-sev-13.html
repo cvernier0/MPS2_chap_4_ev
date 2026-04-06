@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>— Erreurs à ne pas faire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="al1-recap_chap3_ev-sev.html"><span class="title">Espaces et sous-espaces vectoriels</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="al1-recap_chap3_ev-sev-12.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="al1-recap_chap3_ev-sev.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\K}{\mathbb{K}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\L}{\mathcal L}
+\newcommand{\B}{\mathscr B}
+\newcommand{\M}{\mathcal M}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\lbb}{\,]\,}
+\newcommand{\rbb}{\,[\,}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\rg}{rg}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Image}{Im}
+\DeclareMathOperator{\Card}{Card}
+\DeclareMathOperator{\Vect}{Vect}
+
+\newcommand{\jmat}[1]{\left\lgroup\begin{matrix} #1 \end{matrix}\right\rgroup}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html" class="internal"><span class="codenumber">1</span> <span class="title">— Testez vos réflexes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html#al1-recap_chap3_ev-sev-3-2" class="internal"><span class="codenumber">1</span> <span class="title">Vrai ou faux ?</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html" class="internal"><span class="codenumber">2</span> <span class="title">— SEV Niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html#al1-recap_chap3_ev-sev-4-2" class="internal"><span class="codenumber">2</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html" class="internal"><span class="codenumber">3</span> <span class="title">—SEV Niveau 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html#al1-recap_chap3_ev-sev-5-3" class="internal"><span class="codenumber">3</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\mathcal M_n({\R})\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html" class="internal"><span class="codenumber">4</span> <span class="title">— SEV Niveau 3</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html#al1-recap_chap3_ev-sev-6-2" class="internal"><span class="codenumber">4</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^{[0,1]}\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html" class="internal"><span class="codenumber">5</span> <span class="title">—SEV Niveau 4</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html#al1-recap_chap3_ev-sev-7-3" class="internal"><span class="codenumber">5</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R[X]\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html" class="internal"><span class="codenumber">6</span> <span class="title">— SEV Niveau 5</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html#al1-recap_chap3_ev-sev-8-3" class="internal"><span class="codenumber">6</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^\N\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html" class="internal"><span class="codenumber">7</span> <span class="title">— Erreurs fréquentes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html#al1-recap_chap3_ev-sev-9-2" class="internal"><span class="codenumber">7</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html" class="internal"><span class="codenumber">8</span> <span class="title">— Familles libres et génératrices, niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html#al1-recap_chap3_ev-sev-10-3" class="internal"><span class="codenumber">8</span> <span class="title">Dans <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html" class="internal"><span class="codenumber">9</span> <span class="title">— Familles libres et génératrices, niveau 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html#al1-recap_chap3_ev-sev-11-3" class="internal"><span class="codenumber">9</span> <span class="title">Dans <span class="process-math">\(\R^4\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html" class="internal"><span class="codenumber">10</span> <span class="title">— Familles libres et génératrices, niveau 3</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-3" class="internal"><span class="codenumber">10</span> <span class="title">Dans <span class="process-math">\(\mathbb{R}_1[X]\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-4" class="internal"><span class="codenumber">10</span> <span class="title">Dans un e.v. inconnu</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html" class="internal"><span class="codenumber">11</span> <span class="title">— Erreurs à ne pas faire</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html#al1-recap_chap3_ev-sev-13-2" class="internal"><span class="codenumber">11</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="al1-recap_chap3_ev-sev-13"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">— Erreurs à ne pas faire</span>
+</h2>
+<section class="exercises" id="al1-recap_chap3_ev-sev-13-2"><h3 class="heading hide-type">
+<span class="type">Exercice</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Cherchez l’erreur</span>
+</h3>
+<section class="introduction" id="al1-recap_chap3_ev-sev-13-2-2"><div class="para" id="al1-recap_chap3_ev-sev-13-2-2-1">Cliquez sur les parties de la réponse qui posent problème.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-2-2">Notamment, vous pouvez signaler les implications ou les équivalences qui ne fonctionnent pas, en cliquant sur "donc" ou sur "<span class="process-math">\(\iff\)</span>".<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-13-2-3"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;">
+<span data-question=""><div class="para" id="al1-recap_chap3_ev-sev-13-2-3-1-1">
+<dfn class="terminology">Question:</dfn> Donner une base et la dimension de<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-1-2">
+\begin{equation*}
+F=\Vect\left\left\{v_1=\jmat{-1\\0\\3} ,v_2=\jmat{-2\\1\\0},v_3=\jmat{0\\1\\-6}\right\right\}
+\end{equation*}
+</div></span><span data-feedback=""><ul class="disc" id="al1-recap_chap3_ev-sev-13-2-3-3-1">
+<li id="al1-recap_chap3_ev-sev-13-2-3-3-1-1">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-1-1">La première intuition semble raisonnable: on définit <span class="process-math">\(F\)</span> à l’aide des vecteurs <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\text{,}\)</span> donc on regarde en premier lieu cette famille de vecteurs. Si elle est libre et génératrice <dfn class="terminology">de F</dfn> (on y reviendra), alors c’est une base de <span class="process-math">\(F\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-3-3-1-2">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-1">Il est exact que les vecteurs <span class="process-math">\(v_1,v_2,v_3\)</span> ne sont pas nuls, et qu’ils ne sont pas colinéaires entre eux. Par contre, ça ne suffit pas pour conclure que <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est une famille libre: le raccourci "non colinéaire donc libre" ne fonctionne que pour les familles à <em class="emphasis">deux</em> vecteurs, mais pas pour une famille à 3 vecteurs.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-2">Pour savoir si <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est libre, on n’a pas d’autre choix que de vérifier la définition: on prend donc <span class="process-math">\(\lambda_1,\lambda_2,\lambda_3\text{,}\)</span> et on suppose que<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-3">
+\begin{equation*}
+\lambda_1 v_1 + \lambda_2 v_2 + \lambda_3 v_3 = 0_{\R^3}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-4">ce qui revient à dire que<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-5">
+\begin{equation*}
+\begin{cases}
+-\lambda_1 - 2 \lambda_2  \amp =0 \\
+\lambda_2  + \lambda_3\amp = 0 \\
+3\lambda_1   - 6\lambda_3\amp = 0 \\
+\end{cases} \iff 
+\begin{cases}
+-\lambda_1 + 2 \lambda_2  \amp = 0 \\
+\lambda_2  + \lambda_3\amp = 0 \\
+-6\lambda_2   - 6\lambda_3\amp = 0 \\
+\end{cases}
+\iff 
+\begin{cases}
+-\lambda_1 + 2 \lambda_2  \amp = 0 \\
+\lambda_2  + \lambda_3\amp = 0 \\
+0\amp = 0 \\
+\end{cases}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-6">
+<span class="process-math">\(\iff \lambda_1 = 2\lambda_3, \lambda_2 = - \lambda_3, \lambda_3 \in \R\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-7">Ce système a une infinité de solutions, donc il a des solutions non nulles: par exemple, en prenant <span class="process-math">\(\lambda_3=1\text{,}\)</span> on trouve que <span class="process-math">\(\lambda_1=2,\lambda_2=-1,\lambda_1=1\)</span> est une solution, et donc<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-8">
+\begin{equation*}
+2v_1 -v_2+v_3=0_{\R^3}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-2-9">donc en fait, <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> n’est pas libre.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-3-3-1-3">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-3-1">Pour la partie "<span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est génératrice", il ne faut pas confondre "une famille génératrice <dfn class="terminology">de F</dfn>" avec "une famille génératrice <dfn class="terminology">de <span class="process-math">\(\R^3\)</span></dfn>". Ici, ce qu’on veut savoir, c’est si <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> engendre <span class="process-math">\(F\text{,}\)</span> autrement dit si tous les vecteurs de <span class="process-math">\(F\)</span> sont des combinaisons linéaires de <span class="process-math">\(v_1,v_2\)</span> et <span class="process-math">\(v_3\text{.}\)</span> Et c’est le cas: c’est la définition de <span class="process-math">\(\Vect(v_1,v_2,v_3)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-3-2">Mais on n’a pas besoin de savoir si tous les vecteurs <em class="emphasis">de <span class="process-math">\(\R^3\)</span></em> sont des combinaisons linéaires de <span class="process-math">\(v_1,v_2\)</span> et <span class="process-math">\(v_3\text{.}\)</span> Donc il n’est pas utile de prendre n’importe quel <span class="process-math">\(u=\jmat{x\\y\\z}\)</span> et de chercher <span class="process-math">\(\lambda_1,\lambda_2,\lambda_3\)</span> tels que <span class="process-math">\(u=\lambda_1 v_1+\lambda_2 v_2 + \lambda_3 v_3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-3-3-1-4">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-4-1">Et d’ailleurs, si on le fait, ça ne fonctionne pas: dans la réponse ci-dessus, <em class="emphasis">on n’a pas du tout résolu le système</em>, puisqu’à la fin, on ne voit toujours pas comment trouver <span class="process-math">\(\lambda_1,\lambda_2,\lambda_3\text{.}\)</span> En fait, si on résoud ce système, on trouve:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-3-1-4-2">
+\begin{align*}
+\begin{cases}
+-\lambda_1 - 2 \lambda_2  \amp =x \\
+\lambda_2  + \lambda_3\amp = y \\
+3\lambda_1   - 6\lambda_3\amp = z \\
+\end{cases}\amp \iff 
+\begin{cases}
+-\lambda_1 + 2 \lambda_2  \amp = x \\
+\lambda_2  + \lambda_3\amp = y \\
+-6\lambda_2   - 6\lambda_3\amp = z+3x \\
+\end{cases}\\
+\amp \iff 
+\begin{cases}
+-\lambda_1 + 2 \lambda_2  \amp = x \\
+\lambda_2  + \lambda_3\amp = y \\
+0\amp = z+3x+6y \\
+\end{cases}
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-4-3">Du coup, si <span class="process-math">\(u=\jmat{x\\y\\z}\)</span> ne vérifie pas <span class="process-math">\(3x+6y+z=0\text{,}\)</span> alors ce système n’a pas de solutions, et donc dans ce cas <span class="process-math">\(u\)</span> n’est pas combinaison linéaire de <span class="process-math">\(v_1,v_2,v_3\text{.}\)</span> Et donc ce n’est pas une famille génératrice de \R^3, seulement une famille génératrice de <span class="process-math">\(F\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-4-4">
+<dfn class="terminology">Remarque:</dfn> dans la foulée, on a trouvé l’équation de <span class="process-math">\(F\)</span> (même si on ne nous la demandait pas): on a donc<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-3-1-4-5">
+\begin{equation*}
+F=\left\{\jmat{x\\y\\z}\in\R^3, 3x+6y+z=0\right\}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-3-3-1-5">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-1">En fin de compte, <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> engendre bien <span class="process-math">\(F\)</span><details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-1-3"><summary class="ptx-footnote__number" title="Footnote 11.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-1-3">mais, au risque d’être insistante, pas <span class="process-math">\(\R^3\)</span>
+</div></details>, mais  n’est pas libre, donc ce n’est pas une base de <span class="process-math">\(F\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-2">Alors, comment répondre à la question ?<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-3">Puisque <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est génératrice mais pas libre, on va extraire une sous-famille libre de <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> qui reste génératrice de <span class="process-math">\(F\text{.}\)</span> Pour ça, revenons à la fin du calcul qui montre que  <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> n’est pas libre. On a trouvé que<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-4">
+\begin{equation*}
+2v_1 -v_2+v_3=0_{\R^3} \text{ donc } v_3 = -2v_1 + v_2
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-5">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(v_3\)</span> est combinaison linéaire de <span class="process-math">\(v_1\)</span> et <span class="process-math">\(v_2\text{,}\)</span> donc<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-6">
+\begin{equation*}
+F=\Vect(v_1,v_2,v_3)=\Vect(v_1,v_2)
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-7">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(\left\{v_1,v_2\right\}\)</span> est une famille génératrice de <span class="process-math">\(F\text{.}\)</span> De plus, <span class="process-math">\(\left\{v_1,v_2\right\}\)</span> est une famille à deux vecteurs non colinéaires, donc c’est une famille libre.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-5-8">Donc <span class="process-math">\(\left\{v_1,v_2\right\}\)</span> est une base de <span class="process-math">\(F\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-3-3-1-6">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-6-1">Et du coup, on trouve <span class="process-math">\(\dim F= \Card(\left\{v_1,v_2\right\})=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-3-1-6-2">Et pas <span class="process-math">\(\dim F =\)</span> <dfn class="terminology">dim</dfn><span class="process-math">\((\left\{v_1,v_2\right\})\)</span> ! La dimension, ça ne s’applique qu’aux <em class="emphasis">espaces vectoriels et sous-espaces vectoriels</em>, mais pas aux familles de vecteurs. Donc <span class="process-math">\(\dim(\left\{v_1,v_2\right\})\)</span> n’existe pas. La dimension de <span class="process-math">\(F\)</span> n’est pas égale à le <em class="emphasis">dimension</em> d’une de ses bases, elle est égale au <em class="emphasis">cardinal</em> de cette base.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-3-3-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></span><div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-2">
+<dfn class="terminology">Réponse:</dfn> Montrons que <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est une base de <span class="process-math">\(F\text{.}\)</span>
+</div>
+<ul class="disc" id="al1-recap_chap3_ev-sev-13-2-3-2-3">
+<li id="al1-recap_chap3_ev-sev-13-2-3-2-3-1">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-1-1">Les vecteurs <span class="process-math">\(v_1,v_2,v_3\)</span> sont <span data-incorrect="">tous non nuls</span>, et, pris deux à deux, ils ne sont pas colinéaires: <span data-incorrect="">il n’existe pas de scalaire <span class="process-math">\(\alpha\)</span> tel que <span class="process-math">\(v_2=\alpha v_1\)</span></span>, <span data-incorrect="">ni de scalaire <span class="process-math">\(\beta \in\R\)</span> tel que <span class="process-math">\(v_3=\beta v_1\)</span></span>, <span data-incorrect="">ni de scalaire <span class="process-math">\(\gamma\)</span> tel que <span class="process-math">\(v_3 = \gamma v_2\)</span></span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-1-2">
+<span data-correct="">Donc</span> <span data-correct="">la famille <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est libre</span>.</div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-3-2-3-2">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-2-1">Montrons que <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est <span data-correct="">génératrice</span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-2-2">Soit <span class="process-math">\(u=\jmat{x\\y\\z}\in\R^3\text{.}\)</span> On cherche <span class="process-math">\(\lambda_1,\lambda_2,\lambda_3\)</span> tels que</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-2-3">
+<span data-incorrect=""><span class="process-math">\(u=\lambda_1 v_1+\lambda_2 v_2 + \lambda_3 v_3\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-2-4">Autrement dit, on cherche une solution <span class="process-math">\((\lambda_1,\lambda_2,\lambda_3)\)</span> du système</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-2-5">
+<span data-incorrect=""><span class="process-math">\(\begin{cases}
+-\lambda_1 - 2 \lambda_2  \amp = x \\
+\lambda_2  + \lambda_3\amp = y \\
+3\lambda_1   - 6\lambda_3\amp = z \\
+\end{cases}\)</span></span><span data-incorrect=""><span class="process-math">\(\iff\)</span></span> <span data-incorrect=""><span class="process-math">\(\begin{cases}
+\lambda_1\amp =-x-2\lambda_2 \\
+\lambda_2 \amp =y-\lambda_3 \\
+-6\lambda_3\amp =z-3\lambda_1 \\
+\end{cases}\)</span></span> <span data-incorrect=""><span class="process-math">\(\iff\)</span></span> <span data-incorrect=""><span class="process-math">\(\begin{cases}
+\lambda_1\amp =-x-2\lambda_2 \\
+\lambda_2 \amp =y-\lambda_3 \\
+\lambda_3\amp =-\frac16 z+ \frac12 \lambda_1 \\
+\end{cases}\)</span></span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-3-2-6">
+<span data-correct="">On peut résoudre le système et trouver <span class="process-math">\(\lambda_1,\lambda_2\)</span> et <span class="process-math">\(\lambda_3\)</span></span>, <span data-incorrect="">donc</span> <span data-correct=""><span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est génératrice.</span>
+</div>
+</li>
+</ul>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-4">La famille <span class="process-math">\(\left\{v_1,v_2,v_3\right\}\)</span> est <span data-correct="">libre</span> et <span data-incorrect="">engendre <span class="process-math">\(F\)</span></span>, donc <span data-correct="">c’est une base de <span class="process-math">\(F\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-3-2-5">Et donc <span class="process-math">\(\dim F=\)</span> <span data-correct=""><span class="process-math">\(\dim(\left\{v_1,v_2,v_3\right\})=3\)</span></span>.</div>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 11.1"><a href="#al1-recap_chap3_ev-sev-13-2-3" title="Copy heading and permalink for Exercise 11.1" aria-label="Copy heading and permalink for Exercise 11.1">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-13-2-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;">
+<span data-question=""><div class="para" id="al1-recap_chap3_ev-sev-13-2-4-1-1">
+<dfn class="terminology">Question:</dfn> On pose<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-4-1-2">
+\begin{gather*}
+H_1=\left\{\jmat{x\\y\\z} \in \R^3, -x+y+z=0,-2x+5y+4z=0\right\}\\
+H_2=\left\{\jmat{x\\y\\z} \in \R^3, x+y+z=0\right\}
+\end{gather*}
+</div>
+<ol class="decimal ol-marker-2" id="al1-recap_chap3_ev-sev-13-2-4-1-3">
+<li id="al1-recap_chap3_ev-sev-13-2-4-1-3-1">
+<div class="para" id="p-derived-al1-recap_chap3_ev-sev-13-2-4-1-3-1">Trouver une base de <span class="process-math">\(H_1\text{.}\)</span> En déduire <span class="process-math">\(\dim(H_1)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 11.2.1"><a href="#al1-recap_chap3_ev-sev-13-2-4-1-3-1" title="Copy heading and permalink for Item 11.2.1" aria-label="Copy heading and permalink for Item 11.2.1">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-1-3-2">
+<div class="para" id="p-derived-al1-recap_chap3_ev-sev-13-2-4-1-3-2">Trouver une base de <span class="process-math">\(H_2\text{.}\)</span> En déduire <span class="process-math">\(\dim(H_2)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 11.2.2"><a href="#al1-recap_chap3_ev-sev-13-2-4-1-3-2" title="Copy heading and permalink for Item 11.2.2" aria-label="Copy heading and permalink for Item 11.2.2">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-1-3-3">
+<div class="para" id="p-derived-al1-recap_chap3_ev-sev-13-2-4-1-3-3">Est-ce que <span class="process-math">\(\R^3=H_1\oplus H_2\)</span> ?</div>
+<div class="autopermalink" data-description="Item 11.2.3"><a href="#al1-recap_chap3_ev-sev-13-2-4-1-3-3" title="Copy heading and permalink for Item 11.2.3" aria-label="Copy heading and permalink for Item 11.2.3">🔗</a></div>
+</li>
+</ol></span><span data-feedback=""><ul class="disc" id="al1-recap_chap3_ev-sev-13-2-4-3-1">
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-1">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-1-1">Pour trouver une base de <span class="process-math">\(H_1\text{,}\)</span> on va effectivement partir des équations de <span class="process-math">\(H_1\text{.}\)</span> On prend <span class="process-math">\(u=\jmat{x\\y\\z}\in H_1\)</span> et on essaie d’écrire <span class="process-math">\(u\)</span> comme une combinaison linéaire de vecteurs.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-1-2">Mais pour que ça marche, il faut que les équivalences restent de vraies équivalences, et ne deviennent pas des implications. Et ici, on a bien<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-4-3-1-1-3">
+\begin{equation*}
+u\in H_1 \iff -x+y+z=0,-2x+5y+4z=0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-1-4">mais par contre, il est faux que<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-4-3-1-1-5">
+\begin{equation*}
+-x+y+z=0,-2x+5y+4z=0 \iff  -x+y+z=-2x+5y+4z
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-1-6">L’implication <span class="process-math">\(-x+y+z=0,-2x+5y+4z=0 \Rightarrow  -x+y+z=-2x+5y+4z\)</span> est correcte, mais par contre, <span class="process-math">\(-x+y+z=-2x+5y+4z\nRightarrow  -x+y+z=0,-2x+5y+4z=0 \text{:}\)</span> si on a <span class="process-math">\(-x+y+z=-2x+5y+4z\text{,}\)</span> il se peut aussi que <span class="process-math">\(-x+y+z=214\)</span> et <span class="process-math">\(-2x+5y+4z=214\text{,}\)</span> par exemple.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-2">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-2-1">En revanche, si on avait effectivement <span class="process-math">\(u\in H_1 \iff  -x+y+z=-2x+5y+4z\text{,}\)</span> la suite du calcul dans la réponse ci-dessus est tout à fait correcte: on se ramènerait à une seule équation, à partir de laquelle on obtiendrait en effet <span class="process-math">\(H_1=\Vect(4,1,0),(3,0,1))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-2-2">Par contre, dans le calcul, ce n’est pas <span class="process-math">\(u\)</span> qui est égal à <span class="process-math">\(\Vect((4,1,0),(3,0,1))\text{:}\)</span> <span class="process-math">\(u\)</span> est un vecteur de <span class="process-math">\(\R^3\)</span> et <span class="process-math">\(\Vect(4,1,0),(3,0,1))\)</span> est un ensemble.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-2-3">Il serait alors exact que <span class="process-math">\(\left\{(4,1,0),(3,0,1)\right\}\)</span> est une famille libre qui engendre <span class="process-math">\(H_1\text{,}\)</span> donc ce serait une base de <span class="process-math">\(H_1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-3">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-3-1">Mais du coup, on n’a en fait pas <span class="process-math">\(u\in H_1 \iff  -x+y+z=-2x+5y+4z\text{.}\)</span> Alors, comment fait-on ?<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-3-2">Revenons aux équations de <span class="process-math">\(H_1\text{.}\)</span> On a donc<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-4-3-1-3-3">
+\begin{align*}
+u=\jmat{x\\y\\z}\in H_1 \amp \iff \begin{cases} -x+y+z\amp =0 \\ -2x+5y+4z \amp=0 \end{cases}\iff \begin{cases} -x+y+z\amp =0 \\ 3y+2z \amp=0 \end{cases}\\
+\amp \iff \begin{cases} x\amp=y+z = \dfrac13 z \\ y \amp = -\dfrac23 z\end{cases} \\
+\amp \iff u=\left(\dfrac13 z, -\dfrac23 z,z\right), z \in \R\\
+\amp \iff u\in \Vect\left(\dfrac13 , -\dfrac23 ,1\right)
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-3-4">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(H_1=\Vect\left(\dfrac13 , -\dfrac23 ,1\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-3-5">Et donc, <span class="process-math">\(\left\{(\frac13,-\frac23,1)\right\}\)</span> est une famille génératrice de <span class="process-math">\(H_1\text{,}\)</span> et c’est une famille libre puisqu’elle contient <em class="emphasis">un seul vecteur non nul</em>. Donc c’est une base de <span class="process-math">\(H_1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-4">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-4-1">Et donc, <span class="process-math">\(\dim(H_1)=\Card(\left\{\frac13,-\frac23,1\right\})=2\text{.}\)</span> Et non <span class="process-math">\(\dim(H_1)=\dim(\left\{\frac13,-\frac23,1\right\})=2\text{:}\)</span> la dimension n’est définie que pour les espaces et sous-espaces vectoriels et donc <span class="process-math">\(\dim(\left\{\frac13,-\frac23,1\right\})\)</span> n’existe pas.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-5">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-1">Passons maintenant à <span class="process-math">\(H_2\text{.}\)</span> Comme pour <span class="process-math">\(H_1\text{,}\)</span> on part de l’équation: on a effectivement<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-2">
+\begin{equation*}
+u=\jmat{x\\y\\z}\in H_2 \iff x+y+z=0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-3">mais on ne peut pas en déduire que <span class="process-math">\(x,y\)</span> et <span class="process-math">\(z\)</span> sont tous nuls: <span class="process-math">\(x,y,z\)</span> ne sont pas forcémet positifs, et si on a par exemple <span class="process-math">\(x=-2,y=1,z=1\text{,}\)</span> alors <span class="process-math">\(x+y+z=0\)</span> sans que <span class="process-math">\(x,y\)</span> et <span class="process-math">\(z\)</span> soient nuls.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-4">De plus, si c’était le cas, on trouverait "<span class="process-math">\(u=\jmat{0\\0\\0}\)</span>" et non "<span class="process-math">\(u=\Vect(\jmat{0\\0\\0})\)</span>": comme ci-dessus, le <em class="emphasis">vecteur</em> <span class="process-math">\(u\)</span> ne peut pas être égal à l’<em class="emphasis">ensemble</em> <span class="process-math">\(\Vect(\jmat{0\\0\\0})\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-5">Dans ce cas, en fait, le seul vecteur de <span class="process-math">\(H_2\)</span> serait le vecteur nul, donc on aurait <span class="process-math">\(H_2=\left\{\jmat{0\\0\\0}\right\}\text{.}\)</span> Techniquement, <span class="process-math">\(\left\{\jmat{0\\0\\0}\right\}= \Vect(\jmat{0\\0\\0})\text{,}\)</span> donc "<span class="process-math">\(H_2=\Vect(\jmat{0\\0\\0})\)</span>"  mais c’est une façon curieuse de l’écrire <details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-5-5"><summary class="ptx-footnote__number" title="Footnote 11.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-5-5">Un peu comme d’écrire <span class="process-math">\(0_{\R^3}=(1-1,2-2,1-1)\text{:}\)</span> pas faux, mais bizarre.</div></details>.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-5-6">Enfin, <span class="process-math">\(\left\{\jmat{0\\0\\0}\right\}\)</span> serait alors une "famille génératrice" de <span class="process-math">\(H_2\text{,}\)</span> si on veut, mais pas une famille libre: une famille à un seul vecteur est libre <em class="emphasis">si ce vecteur est non nul</em>. Dans ce cas, en fait, <span class="process-math">\(H_2\)</span> n’a aucune base, et sa dimension est 0, pas 1.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-6">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-6-1">Mais en fait, <span class="process-math">\(u\in H_2 \nLeftrightarrow u=\jmat{0\\0\\0}\text{.}\)</span> Alors, comment fait-on ?<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-6-2">On repart de l’équation de <span class="process-math">\(H_2\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-4-3-1-6-3">
+\begin{align*}
+u=\jmat{x\\y\\z}\in H_2 \amp \iff x+y+z=0\\
+\amp\iff x=-y-z\\
+\amp\iff u=(-y-z,y,z)=y\,(-1,1,0)+z\,(-1,0,1), y,z\in \R\\
+\amp \iff u \in \Vect((-1,1,0),(-1,0,1))
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-6-4">Donc <span class="process-math">\(H_2= \Vect((-1,1,0),(-1,0,1))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-6-5">
+<span class="process-math">\(\leadsto\)</span> La famille <span class="process-math">\(\left\{(-1,1,0),(-1,0,1)\right\}\)</span> engendre <span class="process-math">\(H_2\text{,}\)</span> et c’est une famille à deux vecteurs non colinéaires, donc elle est libre. C’est donc une base de <span class="process-math">\(H_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-7">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-7-1">Enfin, du coup,<span class="process-math">\(\dim(H_2) = \Card(\left\{(-1,1,0),(-1,0,1)\right\})=2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-3-1-8">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-8-1">Passons maintenant à la somme directe.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-8-2">Avec deux erreurs qui se compensent dans les questions précédentes, on a effectivement <span class="process-math">\(\dim(H_1)+\dim(H_2)=3=\dim(\R^3)\text{.}\)</span> Mais ça ne suffit pas pour que <span class="process-math">\(H_1\)</span> et <span class="process-math">\(H_2\)</span> soient supplémentaires ! Il faut aussi vérifier que <span class="process-math">\(H_1\cap H_2=\left\{0_{\R^3}\right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-8-3">Vérifions donc. Soit <span class="process-math">\(u=\jmat{x\\y\\z}\in H_1\cap H_2\text{.}\)</span> Alors on a<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-4-3-1-8-4">
+\begin{align*}
+\begin{cases} u \in H_1 \\u\in H_2\end{cases} \amp\iff \begin{cases} -x+y+z\amp =0\\-2x+5y+4z\amp=0\\x+y+z\amp =0\end{cases}\\
+\amp \iff  \begin{cases} -x+y+z\amp =0\\3y+2z \amp=0\\2y+2z\amp =0\end{cases}\\
+\amp \iff  \begin{cases} -x+y+z\amp =0\\3y+2z \amp=0\\-y\amp =0\end{cases}\\
+\amp \iff  \begin{cases} x\amp =0\\z \amp=0\\y\amp =0\end{cases}\\
+\amp\iff u=\jmat{0\\0\\0}
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-8-5">On a donc obtenu <span class="process-math">\(u\in H_1\cap H_2 \iff u=0_{\R^3}\text{.}\)</span> Et donc <span class="process-math">\(H_1\cap H_2=\left\{0_{\R^3}\right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-3-1-8-6">Et donc, on a <span class="process-math">\(H_1\cap H_2=\left\{0_{\R^3}\right\}\)</span> et <span class="process-math">\(\dim(H_1)+\dim(H_2)=3=\dim(\R^3)\text{:}\)</span> donc <span class="process-math">\(H_1\oplus H_2= \R^3\)</span> (voir l’exercice ci-dessous).<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-8-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-4-3-1-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></span><div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-2"><dfn class="terminology">Réponse:</dfn></div>
+<ol class="decimal ol-marker-2" id="al1-recap_chap3_ev-sev-13-2-4-2-3">
+<li id="al1-recap_chap3_ev-sev-13-2-4-2-3-1">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-1">Soit <span class="process-math">\(u=\jmat{x\\y\\z}\in \R^3\text{.}\)</span> Alors, on a</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-2">
+<span class="process-math">\(u\in H_1\)</span><span data-incorrect=""><span class="process-math">\(\iff\)</span></span><span class="process-math">\(-x+y+z=0, -2x + 5y+4z=0\)</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-3">
+<span data-correct=""><span class="process-math">\(\iff\)</span></span><span class="process-math">\(-x+y+z=-2x+5y+4z\)</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-4">
+<span data-incorrect=""><span class="process-math">\(\iff\)</span></span><span class="process-math">\(x=4y+3z\)</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-5">
+<span data-incorrect=""><span class="process-math">\(\iff\)</span></span> <span class="process-math">\(u=(4y+3z,y,z)=y\,(4,1,0)+z\,(3,0,1), y,z\in \R\)</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-6">
+<span data-incorrect=""><span class="process-math">\(\iff\)</span></span><span data-correct=""><span class="process-math">\(u=\Vect((4,1,0),(3,0,1))\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-7">Donc <span data-correct=""><span class="process-math">\(H_1=\Vect((4,1,0),(3,0,1))\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-8">La famille <span class="process-math">\(\left\{(4,1,0),(3,0,1)\right\}\)</span> <span data-incorrect="">est libre</span> <span data-incorrect="">car c’est une famille à 2 vecteurs non colinéaires.</span>. De plus, <span data-incorrect="">par définition du s.e.v. engendré,</span><span data-correct="">c’est une famille génératrice de <span class="process-math">\(H_1\)</span></span>. Donc c’est une base de <span class="process-math">\(H_1\text{.}\)</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-1-9">On a donc <span data-correct=""><span class="process-math">\(\dim (H_1) = \dim(\left\{(4,1,0),(3,0,1)\right\})=2\)</span></span>.</div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-2-3-2">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-2-1">Soit <span class="process-math">\(u=\jmat{x\\y\\z}\in \R^3\text{.}\)</span> Alors, on a</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-2-2">
+<span class="process-math">\(u\in H_2\)</span><span data-incorrect=""><span class="process-math">\(\iff\)</span></span><span class="process-math">\(x+y+z=0\)</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-2-3">
+<span data-correct=""><span class="process-math">\(\iff\)</span></span><span class="process-math">\(x=y=z=0\)</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-2-4">
+<span data-incorrect=""><span class="process-math">\(\iff\)</span></span><span data-correct=""><span class="process-math">\(u=\Vect(\jmat{0\\0\\0})\)</span></span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-2-5">Donc <span data-correct=""><span class="process-math">\(H_1=\Vect(\jmat{0\\0\\0})\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-2-6">La famille <span class="process-math">\(\left\{\jmat{0\\0\\0}\right\}\)</span> <span data-correct="">est libre</span> <span data-correct="">car il y a un seul vecteur, donc il ne peut pas y avoir de colinéarité.</span>. De plus, <span data-incorrect="">par définition du s.e.v. engendré,</span><span data-correct="">c’est une famille génératrice de <span class="process-math">\(H_2\)</span></span>. <span data-correct="">Donc c’est une base de <span class="process-math">\(H_1\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-2-7">On a donc <span data-correct=""><span class="process-math">\(\dim (H_1) = \dim(\left\{\jmat{0\\0\\0}\right\})=1\)</span></span>.</div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-4-2-3-3"><div class="para" id="al1-recap_chap3_ev-sev-13-2-4-2-3-3-1">On a <span data-incorrect=""><span class="process-math">\(\dim(H_1)+\dim(H_2)=2+1=3=\dim(\R^3)\)</span></span> <span data-correct="">donc</span> <span data-incorrect=""><span class="process-math">\(\R^3=H_1\oplus H_2\)</span></span>.</div></li>
+</ol>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 11.2"><a href="#al1-recap_chap3_ev-sev-13-2-4" title="Copy heading and permalink for Exercise 11.2" aria-label="Copy heading and permalink for Exercise 11.2">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-13-2-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;">
+<span data-question=""><div class="para" id="al1-recap_chap3_ev-sev-13-2-5-1-1">
+<dfn class="terminology">Question:</dfn> Soit <span class="process-math">\(E\)</span> un espace vectoriel de dimension finie et <span class="process-math">\(F,G\)</span> deux sous-espaces vectoriels de <span class="process-math">\(E\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-13-2-5-1-2">On suppose que <span class="process-math">\(\dim(E)=11\text{,}\)</span> <span class="process-math">\(\dim F=\dim G= 7\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-13-2-5-1-3">Montrer qu’il existe un vecteur non nul <span class="process-math">\(u\in F\cap G\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><span data-feedback=""><div class="para" id="al1-recap_chap3_ev-sev-13-2-5-3-1">C’est bien la formule de Grassmann qui va nous aider ici ! Et elle est correctement énoncée ci-dessus.</div> <div class="para" id="al1-recap_chap3_ev-sev-13-2-5-3-2">Par contre, à l’étape suivante, on remplace <span class="process-math">\(\dim(F+G)\)</span> par <span class="process-math">\(11\text{,}\)</span> c’est à dire par <span class="process-math">\(\dim(E)\text{.}\)</span> Mais on ne sait pas si <span class="process-math">\(E=F+G\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-13-2-5-3-3">Ce qu’on sait par contre, c’est que <span class="process-math">\(F+G\subset E\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span> Et donc <span class="process-math">\(\dim(F+G) \leq \dim(E)\)</span> (mais, au risque d’être lourde, on ne sait pas si c’est une égalité). Et du coup, on trouve que</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-5-3-4">
+\begin{equation*}
+\dim(F)+\dim(G)-\dim(F\cap G) \leq \dim(E)
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-3-5">donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-5-3-6">
+\begin{equation*}
+14 - \dim(F\cap G) \leq 11
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-3-7">ce qui donne</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-5-3-8">
+\begin{equation*}
+\dim(F\cap G) \geq 3
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-3-9">On en conclut, comme dans la réponse ci-dessus, que quelle que soit la valeur de <span class="process-math">\(\dim(F\cap G)\text{,}\)</span> ce n’est pas 0 : donc, comme <span class="process-math">\(\left\{0_E\right\}\)</span> est le seul s.e.v. de dimension 0, on a <span class="process-math">\(F\cap G \neq \left\{0_E\right\}\text{,}\)</span> et donc il existe un vecteur non nul <span class="process-math">\(u\in F\cap G\text{.}\)</span>
+</div></span><div class="para" id="al1-recap_chap3_ev-sev-13-2-5-2-2">
+<dfn class="terminology">Réponse:</dfn> <span data-incorrect="">On utilise la formule de Grassmann:</span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-2-3"><span data-incorrect=""><span class="process-math">\(\dim(F+G) = \dim(F) + \dim(G) - \dim(F \cap G)\)</span></span></div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-2-4">Du coup ici on a</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-2-5">
+<span data-correct=""><span class="process-math">\(11=\)</span></span> <span data-incorrect=""><span class="process-math">\(7 + 7 - \dim(F\cap G)\)</span></span>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-2-6">donc <span data-correct=""><span class="process-math">\(\dim(F\cap G)=3\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-5-2-7">Et <span data-incorrect="">donc</span> <span data-incorrect=""><span class="process-math">\(F\cap G \neq \left\{0_{\R^3}\right\}\)</span></span>.</div>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 11.3"><a href="#al1-recap_chap3_ev-sev-13-2-5" title="Copy heading and permalink for Exercise 11.3" aria-label="Copy heading and permalink for Exercise 11.3">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-13-2-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone clickablearea_section"><div data-component="clickablearea" data-question_label="" style="visibility: hidden;">
+<span data-question=""><div class="para" id="al1-recap_chap3_ev-sev-13-2-6-1-1">
+<dfn class="terminology">Question:</dfn> Soient <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> deux s.e.v. d’un e.v. de dimension finie <span class="process-math">\(E\text{.}\)</span>  On suppose que  <span class="process-math">\(\dim(F)+\dim(G)=\dim(E)\)</span> et <span class="process-math">\(\dim(F\cap G)=0\text{.}\)</span> Montrer que <span class="process-math">\(E=F\oplus G\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></span><span data-feedback=""><ul class="disc" id="al1-recap_chap3_ev-sev-13-2-6-3-1">
+<li id="al1-recap_chap3_ev-sev-13-2-6-3-1-1">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-1-1">On doit effectivement montrer que <span class="process-math">\(F\cap G = \left\{0_{\R^3}\right\}\)</span> et que <span class="process-math">\(F+G=E\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-1-2">Par contre, <span class="process-math">\(F\cap G = 0_{\R^3}\)</span> est incorrect : <span class="process-math">\(F \cap G\)</span> est un ensemble, et ne peut pas être égal à un vecteur. <details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-13-2-6-3-1-1-2-3"><summary class="ptx-footnote__number" title="Footnote 11.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-13-2-6-3-1-1-2-3"><div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-1-2-3-1">Ca peut sembler exagérément tatillon, mais c’est une bonne habitude d’être attentif au <em class="emphasis">type d’objet mathématique</em> qui correspond aux notations: ensemble, fonction, etc. Ca permet de vérifier que le résultat obtenu a un sens.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></details><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-6-3-1-2">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-2-1">Comme on sait que <span class="process-math">\(\dim(F\cap G)=0\text{,}\)</span> on peut en effet en déduire que <span class="process-math">\(F\cap G = \left\{0_{\R^3}\right\}\text{:}\)</span> <span class="process-math">\(\left\{0_{\R^3}\right\}\)</span> est le seul s.e.v. de dimension zéro.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-13-2-6-3-1-3">
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-3-1">On sait aussi que <span class="process-math">\(\dim(E)=\dim(F)+\dim(G)\text{,}\)</span> mais on ne peut pas en déduire directement que <span class="process-math">\(E=F+G\)</span> !<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-3-2">Par exemple, dans <span class="process-math">\(E=\R^2\text{,}\)</span> on peut prendre <span class="process-math">\(F=\left\{(x,y) \in \R^2, x=y\right\}\)</span> et <span class="process-math">\(G=\Vect((1,1))\text{.}\)</span> Dans ce cas, on a <span class="process-math">\(\dim F=1\)</span> et <span class="process-math">\(\dim G=1\)</span> donc <span class="process-math">\(\dim F + \dim G = 2 = \dim \R^2\text{.}\)</span> Mais <span class="process-math">\(F\)</span> et <span class="process-math">\(G\)</span> ne sont pas en somme directe car en fait, <span class="process-math">\(F=G\)</span> et donc <span class="process-math">\(F\cap G \neq \left\{0_{\R^3}\right\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-3-3">Ici du coup, pour obtenir <span class="process-math">\(F+G=E\text{,}\)</span> on peut dire utiliser la <em class="emphasis">formule de Grassmann</em>:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-13-2-6-3-1-3-4">
+\begin{align*}
+\dim(F+G) \amp= \dim(F)+\dim(G) - \dim(F\cap G)\\
+\amp=\dim(E) - 0
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-3-5">
+<span class="process-math">\(\leadsto F+G\)</span> est un s.e.v. de <span class="process-math">\(E\)</span> de dimension <span class="process-math">\(\dim(E)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-3-1-3-6">Or, le seul s.e.v. de <span class="process-math">\(E\)</span> de dimension égale à <span class="process-math">\(\dim(E)\text{,}\)</span> c’est <span class="process-math">\(E\text{,}\)</span> donc <span class="process-math">\(F+G=E\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-13-2-6-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></span><div class="para" id="al1-recap_chap3_ev-sev-13-2-6-2-2">
+<dfn class="terminology">Réponse:</dfn> On doit montrer que <span data-incorrect=""><span class="process-math">\(F\cap G =\)</span></span><span data-correct=""><span class="process-math">\(0_{\R^3}\)</span></span> et que <span data-incorrect=""><span class="process-math">\(F+G=E\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-2-3">Or, comme <span data-incorrect=""><span class="process-math">\(\dim(F\cap G)=0\)</span></span>, <span data-incorrect="">on en déduit que</span> <span data-incorrect=""><span class="process-math">\(F\cap G = \left\{0_{\R^3}\right\}\)</span></span>.</div>
+<div class="para" id="al1-recap_chap3_ev-sev-13-2-6-2-4">De plus, <span data-incorrect=""><span class="process-math">\(\dim(E)=\dim(F)+\dim(G)\)</span></span>, <span data-correct="">donc</span> <span class="process-math">\(F+G=E\)</span>
+</div>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 11.4"><a href="#al1-recap_chap3_ev-sev-13-2-6" title="Copy heading and permalink for Exercise 11.4" aria-label="Copy heading and permalink for Exercise 11.4">🔗</a></div></article><div class="autopermalink" data-description="Exercice 11: Cherchez l’erreur"><a href="#al1-recap_chap3_ev-sev-13-2" title="Copy heading and permalink for Exercice 11: Cherchez l’erreur" aria-label="Copy heading and permalink for Exercice 11: Cherchez l’erreur">🔗</a></div></section><div class="autopermalink" data-description="Section 11: — Erreurs à ne pas faire"><a href="#al1-recap_chap3_ev-sev-13" title="Copy heading and permalink for Section 11: — Erreurs à ne pas faire" aria-label="Copy heading and permalink for Section 11: — Erreurs à ne pas faire">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="al1-recap_chap3_ev-sev-12.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>— SEV Niveau 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="al1-recap_chap3_ev-sev.html"><span class="title">Espaces et sous-espaces vectoriels</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="al1-recap_chap3_ev-sev-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="al1-recap_chap3_ev-sev.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="al1-recap_chap3_ev-sev-7.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\K}{\mathbb{K}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\L}{\mathcal L}
+\newcommand{\B}{\mathscr B}
+\newcommand{\M}{\mathcal M}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\lbb}{\,]\,}
+\newcommand{\rbb}{\,[\,}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\rg}{rg}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Image}{Im}
+\DeclareMathOperator{\Card}{Card}
+\DeclareMathOperator{\Vect}{Vect}
+
+\newcommand{\jmat}[1]{\left\lgroup\begin{matrix} #1 \end{matrix}\right\rgroup}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html" class="internal"><span class="codenumber">1</span> <span class="title">— Testez vos réflexes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html#al1-recap_chap3_ev-sev-3-2" class="internal"><span class="codenumber">1</span> <span class="title">Vrai ou faux ?</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html" class="internal"><span class="codenumber">2</span> <span class="title">— SEV Niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html#al1-recap_chap3_ev-sev-4-2" class="internal"><span class="codenumber">2</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html" class="internal"><span class="codenumber">3</span> <span class="title">—SEV Niveau 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html#al1-recap_chap3_ev-sev-5-3" class="internal"><span class="codenumber">3</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\mathcal M_n({\R})\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html" class="internal"><span class="codenumber">4</span> <span class="title">— SEV Niveau 3</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html#al1-recap_chap3_ev-sev-6-2" class="internal"><span class="codenumber">4</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^{[0,1]}\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html" class="internal"><span class="codenumber">5</span> <span class="title">—SEV Niveau 4</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html#al1-recap_chap3_ev-sev-7-3" class="internal"><span class="codenumber">5</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R[X]\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html" class="internal"><span class="codenumber">6</span> <span class="title">— SEV Niveau 5</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html#al1-recap_chap3_ev-sev-8-3" class="internal"><span class="codenumber">6</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^\N\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html" class="internal"><span class="codenumber">7</span> <span class="title">— Erreurs fréquentes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html#al1-recap_chap3_ev-sev-9-2" class="internal"><span class="codenumber">7</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html" class="internal"><span class="codenumber">8</span> <span class="title">— Familles libres et génératrices, niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html#al1-recap_chap3_ev-sev-10-3" class="internal"><span class="codenumber">8</span> <span class="title">Dans <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html" class="internal"><span class="codenumber">9</span> <span class="title">— Familles libres et génératrices, niveau 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html#al1-recap_chap3_ev-sev-11-3" class="internal"><span class="codenumber">9</span> <span class="title">Dans <span class="process-math">\(\R^4\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html" class="internal"><span class="codenumber">10</span> <span class="title">— Familles libres et génératrices, niveau 3</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-3" class="internal"><span class="codenumber">10</span> <span class="title">Dans <span class="process-math">\(\mathbb{R}_1[X]\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-4" class="internal"><span class="codenumber">10</span> <span class="title">Dans un e.v. inconnu</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html" class="internal"><span class="codenumber">11</span> <span class="title">— Erreurs à ne pas faire</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html#al1-recap_chap3_ev-sev-13-2" class="internal"><span class="codenumber">11</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="al1-recap_chap3_ev-sev-6"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">— SEV Niveau 3</span>
+</h2>
+<section class="exercises" id="al1-recap_chap3_ev-sev-6-2"><h3 class="heading hide-type">
+<span class="type">Exercice</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^{[0,1]}\)</span></span>
+</h3>
+<section class="introduction" id="al1-recap_chap3_ev-sev-6-2-2"><div class="para" id="al1-recap_chap3_ev-sev-6-2-2-1">Dans cet exercice, on note <span class="process-math">\(E=\left\{f:[0,1]\rightarrow \R\right\}\)</span> l’ensemble des fonctions de <span class="process-math">\([0,1]\)</span> dans <span class="process-math">\(\R\)</span><details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-6-2-2-1-4"><summary class="ptx-footnote__number" title="Footnote 4.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-6-2-2-1-4">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-2-1-4-1">C’est ce que signifie la notation un peu bizarre “<span class="process-math">\(\R^{[0,1]}\)</span>”<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-2-1-4-2">Et plus généralement, pour n’importe quels ensembles <span class="process-math">\(X\)</span> et <span class="process-math">\(Y\text{,}\)</span> <span class="process-math">\(Y^X\)</span> est l’ensemble de toutes les fonctions qui vont de <span class="process-math">\(X\)</span> dans <span class="process-math">\(Y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-2-2">Le vecteur nul, noté <span class="process-math">\(0_E\text{,}\)</span> est donc la fonction constante égale à 0<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-2-3">
+\begin{equation*}
+x\in[0,1] \mapsto 0 \in \R
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-2-5">Dans chacun des exemples ci-dessous, commencez par essayer de trouver des exemples de fonctions qui vérifient la condition.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-6-2-3"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-3-1-1">On  considère le sous-ensemble:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-3-1-2">
+\begin{equation*}
+A = \left\{ f \in E, f(0) = f(1) \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-3-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-1-1-1">
+<span class="process-math">\(A\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-2-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_E \notin A\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-2-2-1">Si, la fonction nulle appartient à <span class="process-math">\(A\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-2-2-2">Notons-la <span class="process-math">\(f_0\text{:}\)</span> on a donc, pour tout <span class="process-math">\(x\in[0,1]\text{,}\)</span> <span class="process-math">\(f_0(x)=0\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-2-2-3">Du coup, <span class="process-math">\(f_0(0)=0\)</span> et <span class="process-math">\(f_0(1)=0\text{,}\)</span> donc <span class="process-math">\(f_0(0)=f_0(1)\text{,}\)</span> et donc <span class="process-math">\(f_0=0_E \in A\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-3-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(A\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-3-2-1">Si, <span class="process-math">\(A\)</span> est stable par somme !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-3-2-2">Soient <span class="process-math">\(f,g\)</span> deux fonctions de <span class="process-math">\([0,1] \rightarrow \R\text{.}\)</span> On a donc <span class="process-math">\(f(0)=f(1)\)</span> et <span class="process-math">\(g(0)=g(1)\text{.}\)</span> Du coup, si on note <span class="process-math">\(s=f+g\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-3-2-3-2-3">
+\begin{equation*}
+s(0) = f(0)+g(0)=f(1)+g(1)=s(1)
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-3-2-4">donc <span class="process-math">\(s = f+g \in A\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-4-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(A\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-4-2-1">Si, <span class="process-math">\(A\)</span> est stable par multiplication scalaire !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-4-2-2">Soient <span class="process-math">\(f\in A\)</span> et <span class="process-math">\(\lambda \in \R\text{.}\)</span> On a donc <span class="process-math">\(f(0)=f(1)\text{.}\)</span> Du coup, si on note <span class="process-math">\(m = \lambda f\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-3-2-4-2-3">
+\begin{equation*}
+m(0) = \lambda f(0) = \lambda f(1) = m(1)
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-3-2-4-2-4">donc <span class="process-math">\(m=\lambda f \in A\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 4.1"><a href="#al1-recap_chap3_ev-sev-6-2-3" title="Copy heading and permalink for Exercise 4.1" aria-label="Copy heading and permalink for Exercise 4.1">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-6-2-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-1-1">On  considère le sous-ensemble:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-1-2">
+\begin{equation*}
+B = \left\{ f \in E, f(1) = f(0)+1 \right\} 
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-1-1">
+<span class="process-math">\(B\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-1">Non, <span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-2">Tout d’abord, un s.e.v. doit contenir le vecteur nul. Mais ici, la fonction nulle n’appartient pas à <span class="process-math">\(B\)</span> : notons-la <span class="process-math">\(f_0\text{.}\)</span> Du coup, pour tout <span class="process-math">\(x\in[0,1]\text{,}\)</span> <span class="process-math">\(f_0(x)=0\text{.}\)</span> Mais du coup, <span class="process-math">\(f_0(1) = 0\)</span> et <span class="process-math">\(f_0(0)=0\text{.}\)</span> Et donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-3">
+\begin{equation*}
+f_0(1)= 0 \neq 1 = f_0(0)+1
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-4">donc <span class="process-math">\(f_0 \notin B\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-5">De plus, un s.e.v. doit être stable par somme, mais ce n’est pas le cas de <span class="process-math">\(B\text{.}\)</span> Par exemple, prenons les fonctions <span class="process-math">\(f(x) = x\)</span> et <span class="process-math">\(g(x)=2^x\text{.}\)</span> On a alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-6">
+\begin{gather*}
+f(1) = 1, f(0)+1 = 0+1 =1\leadsto f(1)= f(0)+1  \text{ donc } f\in B\\
+g(1)=2^1 = 2, g(0)+1 = 2^0+1 = 2 \leadsto g(1) = g(0)+1 \text{ donc }g\in B
+\end{gather*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-7">mais, si on note <span class="process-math">\(s\)</span> la fonction somme <span class="process-math">\(s=f+g\text{,}\)</span> alors on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-8">
+\begin{gather*}
+s(1)=f(1)+g(1) = 1+2=3\\
+s(0)=f(0)+g(0)=0+1=1 \text{ donc } s(0)+1 =2
+\end{gather*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-9">donc <span class="process-math">\(s(1) \neq s(0)+1\text{;}\)</span> autrement dit <span class="process-math">\(s=f+g\notin A\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-10">Et enfin, un s.e.v. doit être stable par multiplication scalaire, mais ce n’est pas non plus le cas de <span class="process-math">\(B\text{.}\)</span> Par exemple, prenons encore <span class="process-math">\(f(x)=x\text{,}\)</span> et <span class="process-math">\(\lambda =2\text{.}\)</span> On a déjà vu que <span class="process-math">\(f\in B\text{,}\)</span> mais, si on note <span class="process-math">\(m\)</span> la fonction <span class="process-math">\(m=\lambda f\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-11">
+\begin{equation*}
+m(1)=2f(1) = 2,\ m(0)+1=2f(0)+1 = 1,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-1-2-12">donc <span class="process-math">\(m(1) \neq m(0)+1\text{;}\)</span> autrement dit, <span class="process-math">\(m=\lambda f \notin B\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-2-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_E \notin B\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-2-2-1">C’est vrai !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-2-2-2">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(B\)</span> n’est pas un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-3-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(B\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-3-2-1">C’est vrai ! Par exemple, prenons les fonctions <span class="process-math">\(f(x) = x\)</span> et <span class="process-math">\(g(x)=2^x\text{.}\)</span> On a alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-3-2-2">
+\begin{gather*}
+f(1) = 1, f(0)+1 = 0+1 \leadsto f(1)= f(0)+1 \text{ donc } f\in B\\
+g(1)=2^1 = 2, g(0)+1 = 2^0+1 = 2 \leadsto g(1) = g(0)+1 \text{ donc }g\in B
+\end{gather*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-3-2-3">mais, si on note <span class="process-math">\(s\)</span> la fonction somme <span class="process-math">\(s=f+g\text{,}\)</span> alors on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-3-2-4">
+\begin{gather*}
+s(1)=f(1)+g(1) = 1+2=3\\
+s(0)=f(0)+g(0)=0+1=1 \text{ donc } s(0)+1 =2
+\end{gather*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-3-2-5">donc <span class="process-math">\(s(1) \neq s(0)+1\text{;}\)</span> autrement dit <span class="process-math">\(s=f+g\notin A\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-3-2-6">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(B\)</span> n’est pas un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-4-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(B\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-4-2-1">C’est vrai ! Par exemple, prenons la fonction <span class="process-math">\(f(x)=x\text{,}\)</span> et <span class="process-math">\(\lambda =2\text{.}\)</span> On a alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-4-2-2">
+\begin{equation*}
+f(1) = 1, f(0)+1 = 0+1 \leadsto f(1)= f(0)+1 \text{ donc } f\in B
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-4-2-3">donc <span class="process-math">\(f\in B\text{,}\)</span> mais, si on note <span class="process-math">\(m\)</span> la fonction <span class="process-math">\(m=\lambda f\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-4-2-4-2-4">
+\begin{equation*}
+m(1)=2f(1) = 2,\ m(0)+1=2f(0)+1 = 1,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-4-2-5">donc <span class="process-math">\(m(1) \neq m(0)+1\text{;}\)</span> autrement dit, <span class="process-math">\(m=\lambda f \notin B\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-4-2-4-2-6">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(B\)</span> n’est pas un s.e.v.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 4.2"><a href="#al1-recap_chap3_ev-sev-6-2-4" title="Copy heading and permalink for Exercise 4.2" aria-label="Copy heading and permalink for Exercise 4.2">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-6-2-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-5-1-1">On  considère le sous-ensemble des fonctions positives:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-5-1-2">
+\begin{equation*}
+C = \left\{ f \in E, \text{ pour tout } x\in [0,1],\, f(x)\geq  0 \right\} 
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-5-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-1-1-1">
+<span class="process-math">\(C\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-1-2-1">Non, <span class="process-math">\(C\)</span> n’est pas un s.e.v.</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-1-2-2">Un s.e.v doit être stable par multiplication scalaire, et <span class="process-math">\(C\)</span> ne l’est pas.</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-1-2-3">Par exemple, notons <span class="process-math">\(f\)</span> la fonction constante égale à 1: pour tout <span class="process-math">\(x\in[0,1], f(x)=1\text{.}\)</span> Du coup, pour tout <span class="process-math">\(x\in [0,1],f(x)\geq 0\text{,}\)</span> donc <span class="process-math">\(f \in C\text{.}\)</span> Mais si on prend <span class="process-math">\(\lambda = -1\text{,}\)</span> alors <span class="process-math">\(\lambda f(0) = -1 \lt 0\text{,}\)</span> donc <span class="process-math">\(\lambda f \notin C\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-2-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_E \notin C\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-2-2-1">Si, la fonction nulle appartient à <span class="process-math">\(C\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-2-2-2">Notons-la <span class="process-math">\(f_0\text{.}\)</span> Du coup, pour tout <span class="process-math">\(x\in[0,1]\text{,}\)</span> <span class="process-math">\(f_0(x)=0\text{,}\)</span> et donc <span class="process-math">\(f_0(x) \geq 0\text{.}\)</span> Et donc <span class="process-math">\(f_0=0_E \in C\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-3-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-3-2-1">Si, <span class="process-math">\(C\)</span> est stable par somme.</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-3-2-2">Prenons deux fonctions <span class="process-math">\(f,g\)</span> dans <span class="process-math">\(C\text{.}\)</span> Alors, pour tout <span class="process-math">\(x\in [0,1]\text{,}\)</span> <span class="process-math">\(f(x) \geq 0\)</span> et <span class="process-math">\(g(x)\geq 0\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-3-2-3">Notons <span class="process-math">\(s\)</span> la fonction somme <span class="process-math">\(s=f+g\text{:}\)</span> on a alors, pour tout <span class="process-math">\(x\in[0,1]\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-5-2-3-2-4">
+\begin{equation*}
+s(x) = f(x) + g(x) \geq 0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-3-2-5">donc <span class="process-math">\(s=f+g\in C\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-4-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-4-2-1">Tout à fait !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-4-2-2">Par exemple,  notons <span class="process-math">\(f\)</span> la fonction constante égale à 1: pour tout <span class="process-math">\(x\in[0,1], f(x)=1\text{.}\)</span> Du coup, pour tout <span class="process-math">\(x\in [0,1],f(x)\geq 0\text{,}\)</span> donc <span class="process-math">\(f \in C\text{.}\)</span> Mais si on prend <span class="process-math">\(\lambda = -1\text{,}\)</span> alors <span class="process-math">\(\lambda f(0) = -1 \lt 0\text{,}\)</span> donc <span class="process-math">\(\lambda f \notin C\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-5-2-4-2-3">Et donc <span class="process-math">\(C\)</span> n’est pas un s.e.v de <span class="process-math">\(E\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 4.3"><a href="#al1-recap_chap3_ev-sev-6-2-5" title="Copy heading and permalink for Exercise 4.3" aria-label="Copy heading and permalink for Exercise 4.3">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-6-2-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-1-1">On  considère le sous-ensemble des fonctions qui sont égales à 0 sur <span class="process-math">\(\left[0,\dfrac12\right]\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-6-1-2">
+\begin{equation*}
+D = \left\{ f \in E, \forall\, x \in \left[0, \frac12\right], f(x) = 0 \right\} 
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-1-1-1">
+<span class="process-math">\(D\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-2-1-1">
+<span class="process-math">\(D\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_E \notin D\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-2-2-1">Si, la fonction nulle appartient à <span class="process-math">\(D\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-2-2-2">Notons-la <span class="process-math">\(f_0\text{.}\)</span> Alors pour tout <span class="process-math">\(x\in [0,1]\text{,}\)</span> <span class="process-math">\(f_0(x)=0\text{.}\)</span> Mais du coup, en particulier,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-6-2-2-2-3">
+\begin{equation*}
+\forall\, x \in \left[0,\dfrac12\right], f_0(x)=0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-2-2-4">donc <span class="process-math">\(f_0=0_E \in D\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-3-1-1">
+<span class="process-math">\(D\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(D\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-3-2-1">Si, <span class="process-math">\(D\)</span> est stable par somme.</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-3-2-2">Soient <span class="process-math">\(f\)</span> et <span class="process-math">\(g\)</span> deux fonctions appartenant à D. Alors, pour tout  <span class="process-math">\(x \in \left[0,\dfrac12\right]\text{,}\)</span> <span class="process-math">\(f(x) = 0\)</span> et <span class="process-math">\(g(x) = 0\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-3-2-3">Mais du coup, si on note <span class="process-math">\(s\)</span> la fonction somme <span class="process-math">\(s=f+g\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-6-2-3-2-4">
+\begin{equation*}
+\forall\, x \in \left[0,\dfrac12\right], s(x) = f(x) + g(x) = 0,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-3-2-5">donc <span class="process-math">\(s=f+g \in D\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-4-1-1">
+<span class="process-math">\(D\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(D\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-4-2-1">Si, <span class="process-math">\(D\)</span> est stable par multiplication scalaire.</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-4-2-2">Soit <span class="process-math">\(f \in D\)</span> et <span class="process-math">\(\lambda \in \R\text{.}\)</span> Alors,  pour tout  <span class="process-math">\(x \in \left[0, \dfrac12\right]\text{,}\)</span> <span class="process-math">\(f(x) = 0\)</span> (puisque <span class="process-math">\(f\in D\)</span>).</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-4-2-3">Mais du coup, si on note <span class="process-math">\(m=\lambda f\)</span> la fonction <span class="process-math">\(f\)</span> multipliée par <span class="process-math">\(\lambda\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-6-2-4-2-4">
+\begin{equation*}
+\forall\, x \in \left[0,\dfrac12\right], m(x) = \lambda f(x)  = 0,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-6-2-4-2-5">donc <span class="process-math">\(m=λf \in D\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 4.4"><a href="#al1-recap_chap3_ev-sev-6-2-6" title="Copy heading and permalink for Exercise 4.4" aria-label="Copy heading and permalink for Exercise 4.4">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-6-2-7"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-1-1">On  considère le sous-ensemble des fonctions à valeurs dans <span class="process-math">\(\left\{0,1\right\}\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-7-1-2">
+\begin{equation*}
+H = \left\{ f \in E,\, \forall\,x\in [0,1], f(x)=0 \text{ ou } f(x)=1 \right\} 
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-6-2-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-1-1">
+<span class="process-math">\(H\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-1">Non, <span class="process-math">\(H\)</span> n’est pas un sous-espace vectoriel.</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-2">Tout d’abord, un s.e.v. est stable par somme, et <span class="process-math">\(H\)</span> ne l’est pas: prenons par exemple les fonctions</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-3">
+\begin{gather*}
+f_1(x)=1 \text{ pour tout } x \in [0,1]\\
+f_2(x)= \begin{cases}
+1 \text{ si } x\in \mathbb{Q}\\
+0 \text{ si } x\notin \mathbb{Q}
+\end{cases}
+\end{gather*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-4"><details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-4-1"><summary class="ptx-footnote__number" title="Footnote 4.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-4-1"><div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-4-1-1">
+<span class="process-math">\(f_1\)</span> est donc la fonction constante égale à 1, et <span class="process-math">\(f_2\)</span> est ce qu’on appelle <em class="emphasis">la fonction indicatrice des rationnels</em>, puisqu’elle "s’allume" si <span class="process-math">\(x\)</span> est un nombre rationnel.</div></div></details></div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-5">Alors, quel que soit <span class="process-math">\(x\in [0,1]\text{,}\)</span> <span class="process-math">\(f_1(x) =1 \in \left\{0,1\right\}\text{,}\)</span> donc <span class="process-math">\(f_1\in H\text{,}\)</span> et de même <span class="process-math">\(f_2(x)\in \left\{0,1\right\}\)</span> donc <span class="process-math">\(f_2 \in H\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-6">Mais si on somme ces deux fonctions, on obtient la fonction <span class="process-math">\(s=f_1+f_2\)</span> qui vaut</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-7">
+\begin{equation*}
+s(x)=f_1(x)+f_2(x) =
+\begin{cases}
+2 \text{ si } x\in \mathbb{Q}\\
+1 \text{ si } x\notin \mathbb{Q}
+\end{cases}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-8">Donc <span class="process-math">\(s\left(\dfrac12\right)=2 \notin\left\{0,1\right\}\text{,}\)</span> et donc <span class="process-math">\(s=f+g\notin H\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-9">De plus, un s.e.v. doit être stable par multiplication scalaire, et <span class="process-math">\(H\)</span> ne l’est pas non plus. Par exemple, reprenons la fonction constante égale à 1, notée <span class="process-math">\(f_1\text{,}\)</span> et <span class="process-math">\(\lambda =2\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-10">Alors <span class="process-math">\(f_1\in H\)</span> mais si on note <span class="process-math">\(m=\lambda f_1\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-11">
+\begin{equation*}
+m(1) = 2 f_1(1) = 2 \notin \left\{0,1\right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-1-2-12">donc <span class="process-math">\(m=\lambda f_1 \notin H\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-2-1-1">
+<span class="process-math">\(H\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_E \notin H\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-2-2-1">Si, la fonction nulle appartient à <span class="process-math">\(H\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-2-2-2">Notons-la <span class="process-math">\(f_0\text{.}\)</span> Alors pour tout <span class="process-math">\(x\in [0,1]\text{,}\)</span> <span class="process-math">\(f_0(x)=0\text{.}\)</span> Mais du coup, pour tout <span class="process-math">\(x\in [0,1], f_0(x)\in \left\{0,1\right\}\text{,}\)</span> donc <span class="process-math">\(f_0=0_E \in H\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-1-1">
+<span class="process-math">\(H\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(H\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-1">Tout à fait !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-2">Par exemple, si on prend les fonctions</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-3">
+\begin{gather*}
+f_1(x)=1 \text{ pour tout } x \in [0,1]\\
+f_2(x)= \begin{cases}
+1 \text{ si } x\in \mathbb{Q}\\
+0 \text{ si } x\notin \mathbb{Q}
+\end{cases}
+\end{gather*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-4"><details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-4-1"><summary class="ptx-footnote__number" title="Footnote 4.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-4-1">
+<span class="process-math">\(f_1\)</span> est donc la fonction constante égale à 1, et <span class="process-math">\(f_2\)</span> est ce qu’on appelle <em class="emphasis">la fonction indicatrice des rationnels</em>, puisqu’elle "s’allume" si <span class="process-math">\(x\)</span> est un nombre rationnel.</div></details></div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-5">Alors, quel que soit <span class="process-math">\(x\in [0,1]\text{,}\)</span> <span class="process-math">\(f_1(x) =1 \in \left\{0,1\right\}\text{,}\)</span> donc <span class="process-math">\(f_1\in H\text{,}\)</span> et de même <span class="process-math">\(f_2(x)\in \left\{0,1\right\}\)</span> donc <span class="process-math">\(f_2 \in H\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-6">Mais si on somme ces deux fonctions, on obtient la fonction <span class="process-math">\(s=f_1+f_2\)</span> qui vaut</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-7">
+\begin{equation*}
+s(x)=f_1(x)+f_2(x) =
+\begin{cases}
+2 \text{ si } x\in \mathbb{Q}\\
+1 \text{ si } x\notin \mathbb{Q}
+\end{cases}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-8">Donc <span class="process-math">\(s\left(\dfrac12\right)=2 \notin\left\{0,1\right\}\text{,}\)</span> et donc <span class="process-math">\(s=f+g\notin H\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-3-2-9">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(H\)</span> n’est pas un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-4-1-1">
+<span class="process-math">\(H\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(H\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-4-2-1">Tout à fait !</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-4-2-2">Par exemple, notons <span class="process-math">\(f_1\)</span> la fonction constante égale à 1, et prenons <span class="process-math">\(\lambda =2\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-4-2-3">Alors, pour tout <span class="process-math">\(x\in [0,1]\text{,}\)</span> <span class="process-math">\(f_1(x)=1\in \left\{0,1\right\}\text{,}\)</span> donc <span class="process-math">\(f_1\in H\text{.}\)</span> Mais si on note <span class="process-math">\(m=\lambda f_1 = 2 f_1,\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-6-2-7-2-4-2-4">
+\begin{equation*}
+m(1) = 2 f_1(1) = 2 \notin \left\{0,1\right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-4-2-5">donc <span class="process-math">\(m=\lambda f_1 \notin H\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-6-2-7-2-4-2-6">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(B\)</span> n’est pas un s.e.v.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 4.5"><a href="#al1-recap_chap3_ev-sev-6-2-7" title="Copy heading and permalink for Exercise 4.5" aria-label="Copy heading and permalink for Exercise 4.5">🔗</a></div></article><div class="autopermalink" data-description="Exercice 4: Sous-espaces vectoriels de \R^{[0,1]}"><a href="#al1-recap_chap3_ev-sev-6-2" title="Copy heading and permalink for Exercice 4: Sous-espaces vectoriels de \R^{[0,1]}" aria-label="Copy heading and permalink for Exercice 4: Sous-espaces vectoriels de \R^{[0,1]}">🔗</a></div></section><div class="autopermalink" data-description="Section 4: — SEV Niveau 3"><a href="#al1-recap_chap3_ev-sev-6" title="Copy heading and permalink for Section 4: — SEV Niveau 3" aria-label="Copy heading and permalink for Section 4: — SEV Niveau 3">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="al1-recap_chap3_ev-sev-5.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="al1-recap_chap3_ev-sev-7.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

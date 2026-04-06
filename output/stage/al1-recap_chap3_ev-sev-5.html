@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>—SEV Niveau 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="al1-recap_chap3_ev-sev.html"><span class="title">Espaces et sous-espaces vectoriels</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="al1-recap_chap3_ev-sev-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="al1-recap_chap3_ev-sev.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="al1-recap_chap3_ev-sev-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\K}{\mathbb{K}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\L}{\mathcal L}
+\newcommand{\B}{\mathscr B}
+\newcommand{\M}{\mathcal M}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\lbb}{\,]\,}
+\newcommand{\rbb}{\,[\,}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\rg}{rg}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Image}{Im}
+\DeclareMathOperator{\Card}{Card}
+\DeclareMathOperator{\Vect}{Vect}
+
+\newcommand{\jmat}[1]{\left\lgroup\begin{matrix} #1 \end{matrix}\right\rgroup}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html" class="internal"><span class="codenumber">1</span> <span class="title">— Testez vos réflexes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html#al1-recap_chap3_ev-sev-3-2" class="internal"><span class="codenumber">1</span> <span class="title">Vrai ou faux ?</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html" class="internal"><span class="codenumber">2</span> <span class="title">— SEV Niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html#al1-recap_chap3_ev-sev-4-2" class="internal"><span class="codenumber">2</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html" class="internal"><span class="codenumber">3</span> <span class="title">—SEV Niveau 2</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html#al1-recap_chap3_ev-sev-5-3" class="internal"><span class="codenumber">3</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\mathcal M_n({\R})\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html" class="internal"><span class="codenumber">4</span> <span class="title">— SEV Niveau 3</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html#al1-recap_chap3_ev-sev-6-2" class="internal"><span class="codenumber">4</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^{[0,1]}\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html" class="internal"><span class="codenumber">5</span> <span class="title">—SEV Niveau 4</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html#al1-recap_chap3_ev-sev-7-3" class="internal"><span class="codenumber">5</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R[X]\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html" class="internal"><span class="codenumber">6</span> <span class="title">— SEV Niveau 5</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html#al1-recap_chap3_ev-sev-8-3" class="internal"><span class="codenumber">6</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^\N\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html" class="internal"><span class="codenumber">7</span> <span class="title">— Erreurs fréquentes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html#al1-recap_chap3_ev-sev-9-2" class="internal"><span class="codenumber">7</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html" class="internal"><span class="codenumber">8</span> <span class="title">— Familles libres et génératrices, niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html#al1-recap_chap3_ev-sev-10-3" class="internal"><span class="codenumber">8</span> <span class="title">Dans <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html" class="internal"><span class="codenumber">9</span> <span class="title">— Familles libres et génératrices, niveau 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html#al1-recap_chap3_ev-sev-11-3" class="internal"><span class="codenumber">9</span> <span class="title">Dans <span class="process-math">\(\R^4\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html" class="internal"><span class="codenumber">10</span> <span class="title">— Familles libres et génératrices, niveau 3</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-3" class="internal"><span class="codenumber">10</span> <span class="title">Dans <span class="process-math">\(\mathbb{R}_1[X]\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-4" class="internal"><span class="codenumber">10</span> <span class="title">Dans un e.v. inconnu</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html" class="internal"><span class="codenumber">11</span> <span class="title">— Erreurs à ne pas faire</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html#al1-recap_chap3_ev-sev-13-2" class="internal"><span class="codenumber">11</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="al1-recap_chap3_ev-sev-5"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">—SEV Niveau 2</span>
+</h2>
+<section class="exercises" id="al1-recap_chap3_ev-sev-5-3"><h3 class="heading hide-type">
+<span class="type">Exercice</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sous-espaces vectoriels de <span class="process-math">\(\mathcal M_n({\R})\)</span></span>
+</h3>
+<section class="introduction" id="al1-recap_chap3_ev-sev-5-3-2"><div class="para" id="al1-recap_chap3_ev-sev-5-3-2-1">Dans cet exercice, on note<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="al1-recap_chap3_ev-sev-5-3-2-2">
+<li id="al1-recap_chap3_ev-sev-5-3-2-2-1">
+<div class="para" id="p-derived-al1-recap_chap3_ev-sev-5-3-2-2-1">
+<span class="process-math">\(E=\M_n(\R)\)</span> l’ensemble des matrices carrées de taille <span class="process-math">\(n\times n\)</span> à coefficients réels,</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-5-3-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-5-3-2-2-2">
+<div class="para" id="p-derived-al1-recap_chap3_ev-sev-5-3-2-2-2">
+<span class="process-math">\(0_{\M_n(\R)}\)</span> la matrice nulle de taille <span class="process-math">\(n\times n\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-5-3-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="al1-recap_chap3_ev-sev-5-3-2-2-3">
+<div class="para" id="p-derived-al1-recap_chap3_ev-sev-5-3-2-2-3">
+<span class="process-math">\(I_n\)</span> la matrice identité de taille <span class="process-math">\(n\times n\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#al1-recap_chap3_ev-sev-5-3-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul></section><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-5-3-3"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-1-1">On considère le sous-ensemble des matrices symétriques:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-3-1-2">
+\begin{equation*}
+A = \left\{ M \in E,\,|\, M^\top = M \right\} 
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-1-1-1">
+<span class="process-math">\(A\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-2-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\M_n(\R)} \notin A\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-2-2-1">Si !</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-2-2-2">La matrice nulle est symétrique, donc appartient à <span class="process-math">\(A\text{.}\)</span> Par exemple, pour <span class="process-math">\(n=3\text{,}\)</span> on a bien</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-3-2-2-2-3">
+\begin{equation*}
+\jmat{0\amp 0\amp 0\\0\amp 0\amp 0\\0\amp 0\amp 0\end}^\top = \jmat{  0\amp 0\amp 0\\0\amp 0\amp 0\\0\amp 0\amp 0}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-2-2-4"><details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-5-3-3-2-2-2-4-1"><summary class="ptx-footnote__number" title="Footnote 3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-5-3-3-2-2-2-4-1">On rappelle que <span class="process-math">\(A^\top\)</span> est la matrice dont les colonnes sont les lignes de <span class="process-math">\(A\text{.}\)</span>
+</div></details></div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-3-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(A\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-3-2-1">Si, <span class="process-math">\(A\)</span> est stable par somme:</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-3-2-2">Soient <span class="process-math">\(M\)</span> et <span class="process-math">\(M'\)</span> deux matrices de <span class="process-math">\(A\text{.}\)</span> Alors <span class="process-math">\(M^\top = M\)</span> et <span class="process-math">\(M'^\top=M'\text{.}\)</span> Du coup,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-3-2-3-2-3">
+\begin{equation*}
+(M+M')^\top = M^\top + M'^\top = M + M'
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-3-2-4">Donc <span class="process-math">\(M+M'\)</span> est symétrique, autrement dit <span class="process-math">\(M+ M'\in A\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-4-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(A\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-4-2-1">Si, <span class="process-math">\(A\)</span> est stable par multiplication scalaire:</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-4-2-2">Soit <span class="process-math">\(M \in A\)</span> et <span class="process-math">\(\lambda \in \R\text{.}\)</span> Alors, comme <span class="process-math">\(M\in A\text{,}\)</span> on a <span class="process-math">\(M^\top = M\text{.}\)</span> Mais du coup,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-3-2-4-2-3">
+\begin{equation*}
+(\lambda M)^\top = M^\top = \lambda M,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-3-2-4-2-4">donc <span class="process-math">\(\lambda M \in A\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 3.1"><a href="#al1-recap_chap3_ev-sev-5-3-3" title="Copy heading and permalink for Exercise 3.1" aria-label="Copy heading and permalink for Exercise 3.1">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-5-3-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-1-1">On considère le sous-ensemble des matrices inversibles:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-4-1-2">
+\begin{equation*}
+B = \left\{ M \in E \,|\, \exists\, M' \in E,\, M'M = MM' = I_n \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-1-1">
+<span class="process-math">\(B\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-1">Non, <span class="process-math">\(B\)</span> n’est pas un sous espace vectoriel.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-2">En effet, un sous-espace vectoriel doit contenir le vecteur nul, or ici, <span class="process-math">\(\notin B\text{.}\)</span> Montrons-le:</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-3">Supposons, par l’absurde, que <span class="process-math">\(0_{\M_n(\R)}\)</span> est inversible. Alors il existe <span class="process-math">\(M \in \M_n(\R)\)</span> telle que</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-4">
+\begin{equation*}
+M\cdot 0_{\M_n(\mathbb{R})}=0_{M_n(\mathbb{R})}\cdot M=I_n
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-5">Mais <span class="process-math">\(M\cdot 0_{\M_n(\mathbb{R})}=0_{\M_n(\mathbb{R})}\text{,}\)</span> donc on se retrouve avec <span class="process-math">\(0_{\M_n(\mathbb{R})}=I_n\text{,}\)</span> ce qui est absurde. Donc <span class="process-math">\(0_{\M_n(\mathbb{R})}\)</span> n’est pas inversible.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-6">De plus, un sous-espace vectoriel est stable par somme, et <span class="process-math">\(B\)</span> ne l’est pas: par exemple</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-7">
+\begin{equation*}
+I_n\in B \text{ et } -I_n  \in B
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-8">mais <span class="process-math">\(I_n+ (-I_n)=0_{\M_n(\mathbb{R})} \notin B\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-9">Et en plus, un sous-espace vectoriel est stable par multiplication scalaire, or <span class="process-math">\(B\)</span> ne l’est pas:</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-10">
+\begin{equation*}
+I_n \in B, \lambda =0 \in \R
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-1-2-11">mais <span class="process-math">\(0\cdot I_n =0_{\M_n(\mathbb{R})} \notin B.\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-2-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\M_n(\R)} \notin B\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-2-2-1">Exactement !</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-2-2-2">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(B\)</span> n’est pas un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-3-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(B\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-3-2-1">Exactement ! Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-4-2-3-2-2">
+\begin{equation*}
+I_n\in B \text{ et } -I_n  \in B
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-3-2-3">mais <span class="process-math">\(I_n+ (-I_n)=0_{\M_n(\mathbb{R})} \notin B\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-3-2-4">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(B\)</span> n’est pas un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-4-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(B\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-4-2-1">Exactement ! Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-4-2-4-2-2">
+\begin{equation*}
+I_n \in B, \lambda =0 \in \R
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-4-2-3">mais <span class="process-math">\(0\cdot I_n =0_{\M_n(\mathbb{R})} \notin B.\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-4-2-4-2-4">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(B\)</span> n’est pas un s.e.v.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 3.2"><a href="#al1-recap_chap3_ev-sev-5-3-4" title="Copy heading and permalink for Exercise 3.2" aria-label="Copy heading and permalink for Exercise 3.2">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-5-3-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-1-1">On considère le sous-ensemble des matrices  triangulaires :<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-1-2">
+\begin{equation*}
+C = \left\{ M \in E\,|\, (\forall\, i \lt j, m_{ij} = 0 ) \text{ ou } (\forall\, i\gt j, m_{ij} = 0 ) \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-1-1-1">
+<span class="process-math">\(C\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-1-2-1">Non, <span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C\)</span> n’est pas stable par somme.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-1-2-2">Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-1-2-3">
+\begin{equation*}
+M=\jmat{1\amp 1\amp \dots\amp 1\\0\amp 1\amp \amp 1\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 1} \in C \text{ et } M'=\jmat{1\amp 0\amp \dots\amp 0\\1\amp 1\amp \amp 0\\\vdots\amp \amp \ddots\amp \\1\amp 1\amp \dots\amp 1}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-1-2-4">mais</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-1-2-5">
+\begin{equation*}
+M+M'=\jmat{2\amp 1\amp \dots\amp 1\\1\amp 2\amp \amp 1\\\vdots\amp \amp \ddots\amp \\1\amp 1\amp \dots\amp 2}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-1-2-6">n’est pas triangulaire, donc n’appartient pas à <span class="process-math">\(C\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-2-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\M_n(\R)} \notin C\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-2-2-1">Si, la matrice nulle est (par exemple) triangulaire inférieure: les coefficients au-dessus de la diagonale sont bien nuls. Les autres aussi, mais on s’en fiche !</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-2-2-2"><details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-5-3-5-2-2-2-2-1"><summary class="ptx-footnote__number" title="Footnote 3.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-5-3-5-2-2-2-2-1">Et elle est aussi triangulaire supérieure, puisque les coefficients sous la diagonale sont nuls.</div></details></div>
+</li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-3-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-3-2-1">Exactement ! Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-3-2-2">
+\begin{equation*}
+M=\jmat{1\amp 1\amp \dots\amp 1\\0\amp 1\amp \amp 1\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 1} \in C \text{ et } M'=\jmat{1\amp 0\amp \dots\amp 0\\1\amp 1\amp \amp 0\\\vdots\amp \amp \ddots\amp \\1\amp 1\amp \dots\amp 1} \in C
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-3-2-3">mais</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-3-2-4">
+\begin{equation*}
+M+M'=\jmat{2\amp 1\amp \dots\amp 1\\1\amp 2\amp \amp 1\\\vdots\amp \amp \ddots\amp \\1\amp 1\amp \dots\amp 2}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-3-2-5">n’est pas triangulaire, donc n’appartient pas à <span class="process-math">\(C\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-1">Si, <span class="process-math">\(C\)</span> est stable par multiplication scalaire. En effet,</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-2">Soient <span class="process-math">\(M\in C, \lambda \in \R\text{,}\)</span> alors deux cas se présentent.</div> <ul class="disc" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3">
+<li id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-1">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-1-1">
+<dfn class="terminology">Premier cas: <span class="process-math">\(M\)</span> est triangulaire <em class="emphasis">supérieure</em></dfn>, autrement dit <span class="process-math">\(m_{ij}=0\)</span> si <span class="process-math">\(i \gt j\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-1-2">
+\begin{equation*}
+M=\jmat{m_{11}\amp m_{12}\amp \dots\amp m_{1n}\\0\amp m_{22}\amp \amp m_{2n}\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp m_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-1-3">et du coup</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-1-4">
+\begin{equation*}
+\lambda M=\jmat{\lambda m_{11}\amp \lambda m_{12}\amp \dots\amp \lambda m_{1n}\\0\amp \lambda m_{22}\amp \amp \lambda m_{2n}\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp \lambda m_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-1-5">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(\lambda M\)</span> est triangulaire supérieure, donc <span class="process-math">\(\lambda M\in C\text{.}\)</span>
+</div>
+</li>
+<li id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-2">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-2-1">
+<dfn class="terminology">Deuxième cas: <span class="process-math">\(M\)</span> est triangulaire <em class="emphasis">inférieure</em></dfn>, autrement dit <span class="process-math">\(m_{ij}=0\)</span> si <span class="process-math">\(i \lt j\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-2-2">
+\begin{equation*}
+M=\jmat{m_{11}\amp 0\amp \dots\amp 0\\m_{21}\amp m_{22}\amp \amp 0\\\vdots\amp \amp \ddots\amp \\m_{n1}\amp m_{n2}\amp \dots\amp m_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-2-3">et du coup</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-2-4">
+\begin{equation*}
+\lambda M=\jmat{\lambda m_{11}\amp 0\amp \dots\amp 0\\\lambda m_{21}\amp \lambda m_{22}\amp \amp 0\\\vdots\amp \amp \ddots\amp \\\lambda m_{n1}\amp \lambda m_{n2}\amp \dots\amp \lambda m_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-3-2-5">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(\lambda M\)</span> est triangulaire inférieure, donc <span class="process-math">\(\lambda M\in C\text{.}\)</span>
+</div>
+</li>
+</ul> <div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-4">Dans tous les cas, si <span class="process-math">\(M\in C\)</span> alors <span class="process-math">\(\lambda M \in C\text{,}\)</span> autrement dit <span class="process-math">\(C\)</span> est stable par multiplication scalaire.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-5-2-4-2-5">Mais <span class="process-math">\(C\)</span> n’est pas un s.e.v. pour autant !</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 3.3"><a href="#al1-recap_chap3_ev-sev-5-3-5" title="Copy heading and permalink for Exercise 3.3" aria-label="Copy heading and permalink for Exercise 3.3">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-5-3-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-1-1">On considère le sous-ensemble des matrices  triangulaires <em class="emphasis">supérieures</em> :<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-6-1-2">
+\begin{equation*}
+C_{sup} = \left\{ M \in E \,|\, \,\forall\, i\gt j, m_{ij} = 0 \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-1-1-1">
+<span class="process-math">\(C_{sup}\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-2-1-1">
+<span class="process-math">\(C_{sup}\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\M_n(\R)} \notin C_{sup}\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-2-2-1">Si, <span class="process-math">\(0_{\M_n(\R)} \in C_{sup}\text{,}\)</span> puisque les coefficients sous la diagonale de <span class="process-math">\(0_{\M_n(\R)}\)</span> sont tous égaux à 0.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-2-2-2">Les autres aussi, mais ça n’est pas grave !</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-3-1-1">
+<span class="process-math">\(C_{sup}\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C_{sup}\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-3-2-1">Si, <span class="process-math">\(C_{sup}\)</span> est stable par somme.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-3-2-2">En effet, soient <span class="process-math">\(M,M' \in C_{sup}\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-6-2-3-2-3">
+\begin{equation*}
+M=\jmat{m_{11}\amp m_{12}\amp \dots\amp m_{1n}\\0\amp m_{22}\amp \amp m_{2n}\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp m_{nn}},\ M'=\jmat{m'_{11}\amp m'_{12}\amp \dots\amp m'_{1n}\\0\amp m'_{22}\amp \amp m'_{2n}\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp m'_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-3-2-4">alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-6-2-3-2-5">
+\begin{equation*}
+M+M'=\jmat{m_{11}+m'_{11}\amp m_{12}+m'_{12}\amp \dots\amp m_{1n}+m'_{1n}\\0\amp m_{22}+m'_{22}\amp \amp m_{2n}+m'_{2n}\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp m_{nn}+m'_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-3-2-6">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(M+M'\)</span> est triangulaire supérieure, donc <span class="process-math">\(M+M'\in C_{sup}\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-4-1-1">
+<span class="process-math">\(C_{sup}\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C_{sup}\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-4-2-1">Si, <span class="process-math">\(C_{sup}\)</span> est stable par multiplication scalaire.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-4-2-2">En effet, soient <span class="process-math">\(M \in C_{sup}\)</span> et <span class="process-math">\(\lambda\in\R\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-6-2-4-2-3">
+\begin{equation*}
+M=\jmat{m_{11}\amp m_{12}\amp \dots\amp m_{1n}\\0\amp m_{22}\amp \amp m_{2n}\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp m_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-4-2-4">alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-6-2-4-2-5">
+\begin{equation*}
+\lambda M=\jmat{\lambda m_{11}\amp \lambda m_{12}\amp \dots\amp \lambda m_{1n}\\0\amp \lambda m_{22}\amp \amp \lambda m_{2n}\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp \lambda m_{nn}}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-6-2-4-2-6">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(\lambda M\)</span> est triangulaire supérieure, donc <span class="process-math">\(\lambda M\in C_{sup}\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 3.4"><a href="#al1-recap_chap3_ev-sev-5-3-6" title="Copy heading and permalink for Exercise 3.4" aria-label="Copy heading and permalink for Exercise 3.4">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-5-3-7"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-1-1">On fixe <span class="process-math">\(A\in \M_n(\R)\text{,}\)</span> et on considère le sous-ensemble des matrices  qui commutent avec <span class="process-math">\(A\)</span> :<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-7-1-2">
+\begin{equation*}
+F = \left\{ M \in E\,| \,AM=MA \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-1-1-1">
+<span class="process-math">\(F\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-2-1-1">
+<span class="process-math">\(F\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\M_n(\R)} \notin F\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-2-2-1">Si, <span class="process-math">\(0_{\M_n(\R)} \in F\text{.}\)</span> En effet, on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-7-2-2-2-2">
+\begin{equation*}
+A\cdot 0_{\M_n(\mathbb R)}=0_{\M_n(\mathbb R)} \text{ et }0_{M_n(\mathbb R)}A=0_{\M_n(\mathbb R)}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-2-2-3">donc <span class="process-math">\(A\cdot 0_{\M_n(\mathbb R)}=0_{\M_n(\mathbb R)}\cdot A\text{,}\)</span> donc <span class="process-math">\(0_{\M_n(\mathbb R)}\in F\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-3-1-1">
+<span class="process-math">\(F\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(F\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-3-2-1">Si, <span class="process-math">\(F\)</span> est stable par somme.</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-3-2-2">Soient <span class="process-math">\(M,M'\)</span> deux matrices de <span class="process-math">\(F\text{.}\)</span> Alors  <span class="process-math">\(AM = MA\)</span> (puisque <span class="process-math">\(M\in F\)</span>) et <span class="process-math">\(AM'=M'A\)</span> (puisque <span class="process-math">\(M'\in F\)</span>). Et donc,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-7-2-3-2-3">
+\begin{equation*}
+A(M+M') = AM + AM' = MA + M'A = (M+M')A,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-3-2-4">donc <span class="process-math">\(M+ M' \in F\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-4-1-1">
+<span class="process-math">\(F\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(F\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-4-2-1">Si, <span class="process-math">\(F\)</span>  est stable par multiplication scalaire:</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-4-2-2">Soient <span class="process-math">\(M \in F\)</span> et <span class="process-math">\(\lambda \in \R\text{.}\)</span> Alors  <span class="process-math">\(AM = MA\)</span> (puisque <span class="process-math">\(M\in F\)</span>) donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-7-2-4-2-3">
+\begin{equation*}
+A(\lambda M) = \lambda AM = \lambda MA = (\lambda M)A
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-7-2-4-2-4">donc <span class="process-math">\(\lambda M \in F\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 3.5"><a href="#al1-recap_chap3_ev-sev-5-3-7" title="Copy heading and permalink for Exercise 3.5" aria-label="Copy heading and permalink for Exercise 3.5">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-5-3-8"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-1-1">On  considère le sous-ensemble:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-1-2">
+\begin{equation*}
+G = \left\{ M \in E\,| \,M^2=M \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-1-1">
+<span class="process-math">\(G\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-1">Non, <span class="process-math">\(G\)</span> n’est pas un s.e.v. !</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-2">D’abord, un s.e.v doit être stable par somme, et <span class="process-math">\(G\)</span> ne l’est pas. Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-3">
+\begin{equation*}
+I_n \in G \text{ et } M=
+\jmat{1\amp 0\amp \dots\amp 0\\0\amp 0\amp \amp 0\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 0} \in G
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-4">mais</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-5">
+\begin{equation*}
+I_n+M =
+\jmat{2\amp 0\amp \dots\amp 0\\0\amp 1\amp \amp 0\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 1}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-6">donne</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-7">
+\begin{equation*}
+(I_n+M)^2=\jmat{4\amp 0\amp \dots\amp 0\\0\amp 1\amp \amp 0\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 1} \neq I_n+M
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-8">donc <span class="process-math">\(I_n+M \notin G\text{.}\)</span>
+</div>  <div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-10">En plus, un s.e.v. doit être stable par multiplication scalaire, et <span class="process-math">\(G\)</span> ne l’est pas. Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-11">
+\begin{equation*}
+I_n \in G \text{ et } \lambda = 2 \in \R
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-12">mais</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-13">
+\begin{equation*}
+(2I_n)^2=4I_n \neq 2 I_n
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-1-2-14">Donc <span class="process-math">\(2 I_n \notin G\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-2-1-1">
+<span class="process-math">\(G\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\M_n(\R)} \notin G\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-2-2-1">Si, <span class="process-math">\(0_{\M_n(\R)} \in G !\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-2-2-2">Si on multiplie la matrice nulle par elle même, on obtient la matrice nulle, donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-2-2-3">
+\begin{equation*}
+0_{\M_n(\R)}^2 = 0_{\M_n(\R)}
+\end{equation*}
+</div>
+</li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-3-1-1">
+<span class="process-math">\(G\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(G\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-1">Exactement ! Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-2">
+\begin{equation*}
+I_n \in G \text{ et } M=
+\jmat{1\amp 0\amp \dots\amp 0\\0\amp 0\amp \amp 0\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 0} \in G
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-3">mais</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-4">
+\begin{equation*}
+I_n+M =
+\jmat{2\amp 0\amp \dots\amp 0\\0\amp 1\amp \amp 0\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 1}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-5">donne</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-6">
+\begin{equation*}
+(I_n+M)^2=\jmat{4\amp 0\amp \dots\amp 0\\0\amp 1\amp \amp 0\\\vdots\amp \amp \ddots\amp \\0\amp 0\amp \dots\amp 1} \neq I_n+A
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-7">donc <span class="process-math">\(I_n+A \notin G\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-3-2-8">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(G\)</span> n’est pas un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-4-1-1">
+<span class="process-math">\(G\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(G\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-4-2-1">Exactement ! Par exemple,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-4-2-2">
+\begin{equation*}
+I_n \in G \text{ et } \lambda = 2 \in \R
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-4-2-3">mais</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-8-2-4-2-4">
+\begin{equation*}
+(2I_n)^2=4I_n \neq 2 I_n
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-4-2-5">Donc <span class="process-math">\(2 I_n \notin G\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-8-2-4-2-6">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(G\)</span> n’est pas un s.e.v.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 3.6"><a href="#al1-recap_chap3_ev-sev-5-3-8" title="Copy heading and permalink for Exercise 3.6" aria-label="Copy heading and permalink for Exercise 3.6">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-5-3-9"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-1-1">On  considère le sous-ensemble des matrices de trace nulle:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-9-1-2">
+\begin{equation*}
+H = \left\{ M \in E, \Tr(M)=0 \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-5-3-9-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-1-1-1">
+<span class="process-math">\(H\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-2-1-1">
+<span class="process-math">\(H\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\M_n(\R)} \notin H\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-2-2-1">Si, <span class="process-math">\(0_{\M_n(\R)} \in H\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-2-2-2">Tous les coefficients de la matrice nulle sont 0, donc la somme des coefficients diagonaux donne  0. On a donc bien <span class="process-math">\(\Tr(0_{\M_n(\R)}) = 0\text{,}\)</span> donc <span class="process-math">\(0_{\M_n(\R)}\in H\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-1-1">
+<span class="process-math">\(H\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(H\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-1">Si, <span class="process-math">\(H\)</span> est stable par somme !</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-2">Soient <span class="process-math">\(M=(m_{ij})_{1\leq i,j\leq n}\)</span> et <span class="process-math">\(M'=(m'_{ij})_{1\leq i,j\leq n}\)</span> deux matrices de <span class="process-math">\(H\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-3">Alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-4">
+\begin{equation*}
+\Tr(M)= m_{11}+m_{22}+...+m_{nn}=0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-5">car <span class="process-math">\(M\in H\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-6">et</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-7">
+\begin{equation*}
+\Tr(M')= m'_{11}+m'_{22}+...+m'_{nn}=0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-8">car <span class="process-math">\(M'\in H\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-9">Maintenant, les coefficients de <span class="process-math">\(M+M'\)</span> sont <span class="process-math">\(m_{ij}+m'_{ij}\text{,}\)</span> et du coup,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-10">
+\begin{align*}
+\Tr(M+M') \amp = (m_{11}+m'_{11})+...+(m_{nn}+m'_{nn}) \\
+\amp = (m_{11}+m_{22}+...+m_{nn}) +(m'_{11}+m'_{22}+...+m'_{nn})\\
+\amp =\Tr(M) + \Tr(M') = 0
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-3-2-11">Donc <span class="process-math">\(M+ M' \in H\text{,}\)</span> et donc <span class="process-math">\(H\)</span> est stable par somme.</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-4-1-1">
+<span class="process-math">\(H\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(H\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-1">Si, <span class="process-math">\(H\)</span> est stable par multiplication scalaire !</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-2">Soient <span class="process-math">\(M=(m_{ij})_{1\leq i,j\leq n}\in H\)</span> et <span class="process-math">\(\lambda \in \R\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-3">Alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-4">
+\begin{equation*}
+\Tr(M)= m_{11}+m_{22}+...+m_{nn}=0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-5">car <span class="process-math">\(M\in H\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-6">et les  coefficients de <span class="process-math">\(\lambda M\)</span> sont <span class="process-math">\(\lambda m_{ij}\text{,}\)</span> donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-7">
+\begin{align*}
+\Tr(\lambda M)\amp= (\lambda m_{11})+(\lambda m_{22})+...+(\lambda m_{nn})\\
+\amp= \lambda (m_{11}+m_{22}+...+m_{nn}) =\lambda\cdot 0\\
+\amp =0
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-5-3-9-2-4-2-8">Donc <span class="process-math">\(\lambda M \in H\text{,}\)</span> et donc <span class="process-math">\(H\)</span> est stable par multiplication scalaire.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 3.7"><a href="#al1-recap_chap3_ev-sev-5-3-9" title="Copy heading and permalink for Exercise 3.7" aria-label="Copy heading and permalink for Exercise 3.7">🔗</a></div></article><div class="autopermalink" data-description="Exercice 3: Sous-espaces vectoriels de \mathcal M_n({\R})"><a href="#al1-recap_chap3_ev-sev-5-3" title="Copy heading and permalink for Exercice 3: Sous-espaces vectoriels de \mathcal M_n({\R})" aria-label="Copy heading and permalink for Exercice 3: Sous-espaces vectoriels de \mathcal M_n({\R})">🔗</a></div></section><div class="autopermalink" data-description="Section 3: —SEV Niveau 2"><a href="#al1-recap_chap3_ev-sev-5" title="Copy heading and permalink for Section 3: —SEV Niveau 2" aria-label="Copy heading and permalink for Section 3: —SEV Niveau 2">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="al1-recap_chap3_ev-sev-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="al1-recap_chap3_ev-sev-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
