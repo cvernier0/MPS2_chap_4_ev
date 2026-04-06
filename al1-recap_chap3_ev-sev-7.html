@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>—SEV Niveau 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.f6b4a33441cf25ab.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.720279673ae692d7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="al1-recap_chap3_ev-sev.html"><span class="title">Espaces et sous-espaces vectoriels</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="al1-recap_chap3_ev-sev-6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="al1-recap_chap3_ev-sev.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="al1-recap_chap3_ev-sev-8.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\K}{\mathbb{K}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\L}{\mathcal L}
+\newcommand{\B}{\mathscr B}
+\newcommand{\M}{\mathcal M}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\lbb}{\,]\,}
+\newcommand{\rbb}{\,[\,}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\rg}{rg}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Image}{Im}
+\DeclareMathOperator{\Card}{Card}
+\DeclareMathOperator{\Vect}{Vect}
+
+\newcommand{\jmat}[1]{\left\lgroup\begin{matrix} #1 \end{matrix}\right\rgroup}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth1 focused" data-preexpanded-levels="0" data-max-levels="1"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html" class="internal"><span class="codenumber">1</span> <span class="title">— Testez vos réflexes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-3.html#al1-recap_chap3_ev-sev-3-2" class="internal"><span class="codenumber">1</span> <span class="title">Vrai ou faux ?</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html" class="internal"><span class="codenumber">2</span> <span class="title">— SEV Niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-4.html#al1-recap_chap3_ev-sev-4-2" class="internal"><span class="codenumber">2</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html" class="internal"><span class="codenumber">3</span> <span class="title">—SEV Niveau 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-5.html#al1-recap_chap3_ev-sev-5-3" class="internal"><span class="codenumber">3</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\mathcal M_n({\R})\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html" class="internal"><span class="codenumber">4</span> <span class="title">— SEV Niveau 3</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-6.html#al1-recap_chap3_ev-sev-6-2" class="internal"><span class="codenumber">4</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^{[0,1]}\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html" class="internal"><span class="codenumber">5</span> <span class="title">—SEV Niveau 4</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-7.html#al1-recap_chap3_ev-sev-7-3" class="internal"><span class="codenumber">5</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R[X]\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html" class="internal"><span class="codenumber">6</span> <span class="title">— SEV Niveau 5</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-8.html#al1-recap_chap3_ev-sev-8-3" class="internal"><span class="codenumber">6</span> <span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R^\N\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html" class="internal"><span class="codenumber">7</span> <span class="title">— Erreurs fréquentes</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-9.html#al1-recap_chap3_ev-sev-9-2" class="internal"><span class="codenumber">7</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html" class="internal"><span class="codenumber">8</span> <span class="title">— Familles libres et génératrices, niveau 1</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-10.html#al1-recap_chap3_ev-sev-10-3" class="internal"><span class="codenumber">8</span> <span class="title">Dans <span class="process-math">\(\R^3\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html" class="internal"><span class="codenumber">9</span> <span class="title">— Familles libres et génératrices, niveau 2</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-11.html#al1-recap_chap3_ev-sev-11-3" class="internal"><span class="codenumber">9</span> <span class="title">Dans <span class="process-math">\(\R^4\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html" class="internal"><span class="codenumber">10</span> <span class="title">— Familles libres et génératrices, niveau 3</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-3" class="internal"><span class="codenumber">10</span> <span class="title">Dans <span class="process-math">\(\mathbb{R}_1[X]\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-12.html#al1-recap_chap3_ev-sev-12-4" class="internal"><span class="codenumber">10</span> <span class="title">Dans un e.v. inconnu</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html" class="internal"><span class="codenumber">11</span> <span class="title">— Erreurs à ne pas faire</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="al1-recap_chap3_ev-sev-13.html#al1-recap_chap3_ev-sev-13-2" class="internal"><span class="codenumber">11</span> <span class="title">Cherchez l’erreur</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="al1-recap_chap3_ev-sev-7"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">—SEV Niveau 4</span>
+</h2>
+<section class="exercises" id="al1-recap_chap3_ev-sev-7-3"><h3 class="heading hide-type">
+<span class="type">Exercice</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sous-espaces vectoriels de <span class="process-math">\(\R[X]\)</span></span>
+</h3>
+<section class="introduction" id="al1-recap_chap3_ev-sev-7-3-2"><div class="para" id="al1-recap_chap3_ev-sev-7-3-2-1">Dans cet exercice, on note <span class="process-math">\(E=\R[X]\)</span> l’espace vectoriel des polynômes à coefficients réels. On note <span class="process-math">\(0_{\R[X]}\)</span> le polynôme constant égal à 0.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-7-3-3"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-1-1">On  considère le sous-ensemble des polynômes de degré exactement 4:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-1-2">
+\begin{equation*}
+A = \left\{ P \in E, \deg(P) = 4 \right\}  
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-1-1">
+<span class="process-math">\(A\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-1">Non, <span class="process-math">\(A\)</span> n’est pas un s.e.v.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-2">D’abord, un s.e.v. doit contenir le vecteur nul <span class="process-math">\(0_E\text{,}\)</span> mais le polynôme nul n’appartient pas à <span class="process-math">\(A\text{,}\)</span> car il n’est pas de degré 4. Plus précisément, on dit qu’un polynôme est de degré 4 si</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-3">
+\begin{equation*}
+P(X)=a_0+a_1X+a_2X^2+....
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-4">avec <span class="process-math">\(a_4 \neq 0\)</span> et <span class="process-math">\(a_k =0\)</span> pour tout <span class="process-math">\(k\gt 4\text{:}\)</span> le coefficient de <span class="process-math">\(a_4\)</span> est le dernier coefficient non nul. Mais dans le cas du polynôme nul, <em class="emphasis">tous</em> les coefficients sont nuls, donc <span class="process-math">\(a_4=0\text{,}\)</span> et donc il n’est pas de degré 4.<details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-4-7"><summary class="ptx-footnote__number" title="Footnote 5.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-4-7">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-4-7-1">Et donc, de quel degré est le polynôme nul ?</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-4-7-2">Et bien en fait, il n’y a pas vraiment de bonne réponse, puisqu’on utilise "le dernier coefficient non nul" pour déterminer le degré. Ce n’est donc pas 0, car pour ça il faudrait que <span class="process-math">\(a_0\neq 0\text{.}\)</span> Par convention, on pose généralement <span class="process-math">\(\deg(0_{\R[X]}) = -1\)</span> ou <span class="process-math">\(-\infty\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-4-7-3">Voir <a class="external" href="https://fr.wikipedia.org/wiki/Degr%C3%A9_d%27un_polyn%C3%B4me#Degr%C3%A9_du_polyn%C3%B4me_nul" target="_blank">par ici</a> pour plus de détails.</div>
+</div></details>
+</div>  <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-6">De plus, un s.e.v. doit être stable par somme, et ce n’est pas le cas de <span class="process-math">\(A\text{.}\)</span> Prenons par exemple les polynômes</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-7">
+\begin{equation*}
+P_1(X)=-X^4+2X, P_2(X)=X^4+3X^3+1
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-8">Alors <span class="process-math">\(\deg P_1 = \deg P_2 = 4\)</span> donc <span class="process-math">\(P_1 \in A\)</span> et <span class="process-math">\(P_2\in A\text{.}\)</span> Mais si on note <span class="process-math">\(P=P_1+P_2\)</span> le polynôme somme, on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-9">
+\begin{equation*}
+S(X)=P_1(X)+P_2(X)=3X^3 +2X+1
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-10">donc <span class="process-math">\(\deg S= 3 \neq 4\)</span> donc <span class="process-math">\(S=P_1+P_2 \notin A\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-11">Enfin, un s.e.v. doit être stable par multiplication scalaire, et <span class="process-math">\(A\)</span> ne l’est pas. Prenons</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-12">
+\begin{equation*}
+P_1(X)=-X^4+2X \text{ et } \lambda = 0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-1-2-13">Alors <span class="process-math">\(\deg P_1 = 4\)</span> donc <span class="process-math">\(P_1 \in A\text{,}\)</span> mais <span class="process-math">\(\lambda P_1 = 0_E\)</span> est le polynôme nul, qui n’est pas de degré 4. Donc <span class="process-math">\(\lambda P_1 \notin A\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\R[X]} \notin H\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-1">Tout à fait !</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-2">Le polynôme nul <span class="process-math">\(0_E\)</span> n’est pas de degré 4, donc il n’appartient pas à <span class="process-math">\(A\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3"><details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1"><summary class="ptx-footnote__number" title="Footnote 5.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1-1">On dit qu’un polynôme est de degré 4 si</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1-2">
+\begin{equation*}
+P(X)=a_0+a_1X+a_2X^2+....
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1-3">avec <span class="process-math">\(a_4 \neq 0\)</span> et <span class="process-math">\(a_k =0\)</span> pour tout <span class="process-math">\(k\gt 4\text{:}\)</span> le coefficient de <span class="process-math">\(a_4\)</span> est le dernier coefficient non nul.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1-4">Mais dans le cas du polynôme nul, <em class="emphasis">tous</em> les coefficients sont nuls, donc <span class="process-math">\(a_4=0\text{,}\)</span> et donc il n’est pas de degré 4.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1-5">Et donc, de quel degré est le polynôme nul ? En fait, il n’y a pas vraiment de bonne réponse à cette question, puisqu’on utilise "le dernier coefficient non nul" pour définir le degré.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1-6">Ce n’est donc pas 0, car pour ça il faudrait que <span class="process-math">\(a_0\neq 0\text{.}\)</span> Par convention, on pose généralement <span class="process-math">\(\deg(0_{\R[X]}) = -1\)</span> ou <span class="process-math">\(-\infty\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-2-2-3-1-7">Voir <a class="external" href="https://fr.wikipedia.org/wiki/Degr%C3%A9_d%27un_polyn%C3%B4me#Degr%C3%A9_du_polyn%C3%B4me_nul" target="_blank">par ici</a> pour plus de détails.</div>
+</div></details></div>
+</li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-3-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(A\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-3-2-1">Tout à fait !</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-3-2-2">Prenons par exemple les polynômes</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-3-2-3">
+\begin{equation*}
+P_1(X)=-X^4+2X, P_2(X)=X^4+3X^3+1
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-3-2-4">Alors <span class="process-math">\(\deg P_1 = \deg P_2 = 4\)</span> donc <span class="process-math">\(P_1 \in A\)</span> et <span class="process-math">\(P_2\in A\text{.}\)</span> Mais si on note <span class="process-math">\(P=P_1+P_2\)</span> le polynôme somme, on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-3-2-5">
+\begin{equation*}
+S(X)=P_1(X)+P_2(X)=3X^3 +2X+1
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-3-2-6">donc <span class="process-math">\(\deg S= 3 \neq 4\)</span> donc <span class="process-math">\(S=P_1+P_2 \notin A\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-3-2-7">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(A\)</span> n’est pas un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-4-1-1">
+<span class="process-math">\(A\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(A\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-4-2-1">Tout à fait !</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-4-2-2">Prenons par exemple</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-3-2-4-2-3">
+\begin{equation*}
+P_1(X)=-X^4+2X, \lambda =0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-4-2-4">Alors <span class="process-math">\(\deg P_1 = 4\)</span> donc <span class="process-math">\(P_1 \in A\text{.}\)</span> Mais si on note <span class="process-math">\(\lambda P_1 = 0\cdot P_1 =0_E\)</span> est le polynôme nul, qui n’est pas de degré 4. Donc <span class="process-math">\(\lambda P_1 \notin A\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-3-2-4-2-5">Et c’est suffisant, mais ce n’est pas la seule façon de montrer que <span class="process-math">\(A\)</span> n’est pas un s.e.v.</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 5.1"><a href="#al1-recap_chap3_ev-sev-7-3-3" title="Copy heading and permalink for Exercise 5.1" aria-label="Copy heading and permalink for Exercise 5.1">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-7-3-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-1-1">On  considère le sous-ensemble des polynômes de degré inférieur ou égal à 4:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-1-2">
+\begin{equation*}
+B = \left\{ P \in E, \deg(P) \leq  4 \right\}  
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <details id="al1-recap_chap3_ev-sev-7-3-4-1-4" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Indice</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-1-4-1">Notons qu’un polynôme <span class="process-math">\(P\in \R[X]\)</span> peut s’écrire<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-1-4-2">
+\begin{equation*}
+P(X)=a_0+a_1X+a_2X^2+...
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-1-4-3">où les <span class="process-math">\(a_k\)</span> sont nuls à partir d’un certain entier <span class="process-math">\(d\text{,}\)</span> qu’on appelle le degré de <span class="process-math">\(P\text{.}\)</span> Et donc <span class="process-math">\(P\in B\)</span> ssi pour tout <span class="process-math">\(k\geq 5\text{,}\)</span> <span class="process-math">\(a_k=0\text{,}\)</span> autrement dit<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-4-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-1-4-4">
+\begin{equation*}
+P(X) = a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Indice 1"><a href="#al1-recap_chap3_ev-sev-7-3-4-1-4" title="Copy heading and permalink for Indice 1" aria-label="Copy heading and permalink for Indice 1">🔗</a></div>
+</div></details>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-1-1-1">
+<span class="process-math">\(B\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\R[X]} \notin H\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-1">Si, le polynôme nul appartient à <span class="process-math">\(B\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-2">On dit qu’un polynôme est de degré 4 si</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-3">
+\begin{equation*}
+P(X)=a_0+a_1X+a_2X^2+....
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-4">avec <span class="process-math">\(a_d \neq 0\)</span> et <span class="process-math">\(a_k =0\)</span> pour tout <span class="process-math">\(k\gt d\text{:}\)</span> le degré correspond au numéro du dernier coefficient non nul.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-5">Mais dans le cas du polynôme nul, <em class="emphasis">tous</em> les coefficients sont nuls.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-6">Et donc, quel est son degré ? En fait, il n’y a pas vraiment de bonne réponse à cette question, puisqu’on utilise "le dernier coefficient non nul" pour définir le degré.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-7">Ce n’est donc pas 0, car pour ça il faudrait que <span class="process-math">\(a_0\neq 0\text{.}\)</span> Par convention, on pose généralement <span class="process-math">\(\deg(0_{\R[X]}) = -1\)</span> ou <span class="process-math">\(-\infty\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-8">Voir <a class="external" href="https://fr.wikipedia.org/wiki/Degr%C3%A9_d%27un_polyn%C3%B4me#Degr%C3%A9_du_polyn%C3%B4me_nul" target="_blank">par ici</a> pour plus de détails.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-2-2-9">Mais quelle que soit la convention qu’on choisit, on a bien <span class="process-math">\(\deg(0_{\R[X]}) \leq 4\text{,}\)</span> et donc <span class="process-math">\(0_{\R[X]} \in B\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-3-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(B\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-3-2-1">Si, <span class="process-math">\(B\)</span> est stable par somme.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-3-2-2">Soient <span class="process-math">\(P\)</span> et <span class="process-math">\(Q\)</span> deux polynômes appartenant à <span class="process-math">\(B\text{.}\)</span> Alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-2-3-2-3">
+\begin{gather*}
+P(X) = a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0\\
+Q(X) = b_4X^4 + b_3X^3+b_2X^2 +b_1 X + b_0
+\end{gather*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-3-2-4">avec des coefficients <span class="process-math">\(a_k,b_k\)</span> dans <span class="process-math">\(\R\)</span> et qui peuvent éventuellent être nuls. Alors, si on note <span class="process-math">\(S=P+Q\)</span> le polynôme somme de <span class="process-math">\(P\)</span> et <span class="process-math">\(Q\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-2-3-2-5">
+\begin{align*}
+S(X) \amp = P(X)+Q(X)\\
+\amp=(a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0)\\
+\amp + (b_4X^4 + b_3X^3+b_2X^2 +b_1 X + b_0)\\
+\amp= (a_4+b_4)X^4+(a_3+b_3)X^3+(a_2+b_2)X^2+(a_1+b_1)X+(a_0+b_0)
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-3-2-6">donc <span class="process-math">\(S\)</span> est de degré inférieur ou égal à 4, et donc <span class="process-math">\(S= P+Q \in B\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-4-1-1">
+<span class="process-math">\(B\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(B\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-4-2-1">Si, <span class="process-math">\(B\)</span> est stable par multiplication scalaire.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-4-2-2">Prenons un polynôme <span class="process-math">\(P \in B\)</span> et un réel <span class="process-math">\(\lambda \in \R\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-4-2-3">Alors on peut écrire</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-2-4-2-4">
+\begin{equation*}
+P(X) = a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-4-2-5">et du coup, si on note <span class="process-math">\(M = \lambda P\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-4-2-4-2-6">
+\begin{align*}
+M(X) \amp = \lambda P(X) = \lambda (a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0)\\
+\amp = (\lambda a_4)X^4 + (\lambda a_3) X^3+(\lambda a_2)X^2 +(\lambda a_1) X + (\lambda a_0)
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-4-2-4-2-7">et donc <span class="process-math">\(M\in B\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 5.2"><a href="#al1-recap_chap3_ev-sev-7-3-4" title="Copy heading and permalink for Exercise 5.2" aria-label="Copy heading and permalink for Exercise 5.2">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-7-3-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-1-1">On  considère le sous-ensemble des polynômes multiples de <span class="process-math">\(X-4\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-5-1-2">
+\begin{equation*}
+C = \left\{ P \in E, \exists\, Q \in E \text{ tel que } P(X) =(X-4)Q(X) \right\} 
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-1-1-1">
+<span class="process-math">\(C\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-1-2-1">Exactement !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-2-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\R[X]} \notin H\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-2-2-1">Si, le polynôme nul <span class="process-math">\(0_{\R[X]}\in C\text{,}\)</span> car c’est un multiple de <span class="process-math">\((X-4)\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-5-2-2-2-2">
+\begin{equation*}
+(X-4)0_{\R[X]} = 0_{\R[X]}
+\end{equation*}
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-3-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-3-2-1">Si, <span class="process-math">\(C\)</span> est stable par somme:</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-3-2-2">Prenons deux polynômes <span class="process-math">\(P_1\)</span> et <span class="process-math">\(P_2\)</span> appartenant à <span class="process-math">\(C\text{:}\)</span> alors ce sont des multiples de <span class="process-math">\((X-4)\text{,}\)</span> donc il existe deux polynômes <span class="process-math">\(Q_1\)</span> et <span class="process-math">\(Q_2\)</span> tels que</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-5-2-3-2-3">
+\begin{equation*}
+P_1=(X-4)Q_1 \text{ et } P_2=(X-4)Q_2
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-3-2-4">Mais du coup, si on note <span class="process-math">\(S=P_1+P_2\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-5-2-3-2-5">
+\begin{align*}
+S(X)\amp=P_1(X)+P_2(X) = (X-4)Q_1(X) + (X-4)Q_2(X)\\
+\amp = (X-4)\underbrace{(Q_1(X)+Q_2(X))}_{:=Q(X)}
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-3-2-6">donc <span class="process-math">\(S(X)=(X-4)Q(X)\)</span> est un multiple de <span class="process-math">\(X-4\text{,}\)</span> donc <span class="process-math">\(S=P_1+P_2 \in C\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-4-1-1">
+<span class="process-math">\(C\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(C\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-4-2-1">Si, <span class="process-math">\(C\)</span> est stable par multiplication scalaire:</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-4-2-2">Prenons un polynôme <span class="process-math">\(P\in C\)</span> et un réel <span class="process-math">\(\lambda \in \R\text{.}\)</span> Alors, comme <span class="process-math">\(P\in C\text{,}\)</span> il existe <span class="process-math">\(Q\in \R[X]\)</span> tel que <span class="process-math">\(P(X)=(X-4)Q(X)\text{.}\)</span> Et du coup, si on note <span class="process-math">\(M\lambda P\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-5-2-4-2-3">
+\begin{equation*}
+M(X)= \lambda P(X)= \lambda (X-4)Q(X) = (X-4)(\lambda Q(X))
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-5-2-4-2-4">donc <span class="process-math">\(M(X)=(X-4)\tilde Q(X)\)</span> est un multiple de <span class="process-math">\(X-4\text{,}\)</span> donc <span class="process-math">\(M=\lambda P \in C\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 5.3"><a href="#al1-recap_chap3_ev-sev-7-3-5" title="Copy heading and permalink for Exercise 5.3" aria-label="Copy heading and permalink for Exercise 5.3">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-7-3-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-1-1">On  considère le sous-ensemble des polynômes admettant uniquement des termes de degré pair:<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-6-1-2">
+\begin{equation*}
+D = \left\{ P \in E, P = \sum_{n}a_nX^n \text{ avec } a_{2k+1} = 0 \text{ pour tout }k \in \N \right\}  
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-1-1-1">
+<span class="process-math">\(D\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-1-2-1">Tout à fait !</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-2-1-1">
+<span class="process-math">\(D\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\R[X]} \notin H\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-2-2-1">Si, <span class="process-math">\(0_{\R[X]}\in D\)</span> !</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-2-2-2">
+<span class="process-math">\(0_{\R[X]}\)</span> est le polynôme dont tous les coefficients sont nuls, donc en particulier les coefficients <em class="emphasis">impairs</em> sont nuls. Donc <span class="process-math">\(0_{\R[X]}\)</span> appartient bien à <span class="process-math">\(D\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-3-1-1">
+<span class="process-math">\(D\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(D\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-3-2-1">Si, <span class="process-math">\(D\)</span> est stable par somme:</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-3-2-2">Prenons deux polynômes <span class="process-math">\(P\)</span> et <span class="process-math">\(Q\)</span> appartenant à <span class="process-math">\(D\text{:}\)</span> alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-6-2-3-2-3">
+\begin{align*}
+P(X)= \sum_{n=0}^{\deg(P)}a_n X^n\amp \text{ avec } a_{2k+1} = 0 \text{ pour tout } k\\
+Q(X)= \sum_{n=0}^{\deg(Q)}b_n X^n \amp \text{ avec } b_{2k+1} = 0 \text{ pour tout } k
+\end{align*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-3-2-4">et du coup</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-6-2-3-2-5">
+\begin{equation*}
+P(X)+Q(X)= \sum_{k=0}^{\max(\deg(P),\deg(Q))} (a_n+b_n)X^n
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-3-2-6">
+<span class="process-math">\(\leadsto\)</span> les coefficients de <span class="process-math">\(P+Q\)</span> sont les <span class="process-math">\(a_n+b_n\)</span> et donc les coefficients impairs sont <span class="process-math">\(a_{2k+1}+b_{2k+1} = 0+0 =0\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-3-2-7">
+<span class="process-math">\(\leadsto\)</span> Tous les coefficients impairs de <span class="process-math">\(P+Q\)</span> sont nuls, donc  <span class="process-math">\(P+Q \in D\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-4-1-1">
+<span class="process-math">\(D\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(D\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-4-2-1">Si, <span class="process-math">\(D\)</span> est stable par multiplication scalaire:</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-4-2-2">Prenons un polynôme <span class="process-math">\(P \in D\)</span> et un réel <span class="process-math">\(\lambda \in \R\text{.}\)</span> Alors</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-6-2-4-2-3">
+\begin{equation*}
+P(X)= \sum_{n=0}^{\deg(P)}a_n X^n \text{ avec } a_{2k+1} = 0 \text{ pour tout } k
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-4-2-4">et du coup</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-6-2-4-2-5">
+\begin{equation*}
+\lambda P(X)= \sum_{n=0}^{\deg(P)} (\lambda a_n) X^n
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-4-2-6">
+<span class="process-math">\(\leadsto\)</span> les coefficients de <span class="process-math">\(\lambda P\)</span> sont les <span class="process-math">\(\lambda a_n\)</span> et donc les coefficients impairs sont <span class="process-math">\(\lambda a_{2k+1}= \lambda \cdot 0 =0\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-6-2-4-2-7">
+<span class="process-math">\(\leadsto\)</span> Tous les coefficients impairs de <span class="process-math">\(\lambda P\)</span> sont nuls, donc  <span class="process-math">\(\lambda P \in D\text{.}\)</span>
+</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 5.4"><a href="#al1-recap_chap3_ev-sev-7-3-6" title="Copy heading and permalink for Exercise 5.4" aria-label="Copy heading and permalink for Exercise 5.4">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-7-3-7"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-1-1">On  considère le sous-ensemble des polynômes pairs de degré au plus 4 :<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-1-2">
+\begin{equation*}
+F = \left\{ P \in E, \deg(P)\leq 4 \text{ et } P(X) = \sum_{n} a_nX^n \text{ avec } a_{2k+1} =0 \text{ pour tout } k \in \N \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-1-1-1">
+<span class="process-math">\(F\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-1-2-1">Tout à fait !</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-1-2-2">
+<dfn class="terminology">Remarque:</dfn> En fait, <span class="process-math">\(F=D\cap \R_4[X]\text{,}\)</span> et on a vu dans les deux exercices précédents que <span class="process-math">\(\R_4[X]\)</span> et <span class="process-math">\(D\)</span> sont des s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-1-2-3">Et l’intersection de deux s.e.v. est toujours un s.e.v.</div>
+</li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-2-1-1">
+<span class="process-math">\(F\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\R[X]} \notin H\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-2-2-1">Si, <span class="process-math">\(0_{\R[X]} \in H\text{:}\)</span>
+</div> <ul class="disc" id="al1-recap_chap3_ev-sev-7-3-7-2-2-2-2">
+<li id="al1-recap_chap3_ev-sev-7-3-7-2-2-2-2-1"><div class="para" id="p-derived-al1-recap_chap3_ev-sev-7-3-7-2-2-2-2-1">d’une part, <span class="process-math">\(\deg(0_{\R[X]}) \leq 4\text{;}\)</span>
+</div></li>
+<li id="al1-recap_chap3_ev-sev-7-3-7-2-2-2-2-2"><div class="para" id="p-derived-al1-recap_chap3_ev-sev-7-3-7-2-2-2-2-2">d’autre part, tous les coefficients de <span class="process-math">\(0_{\R[X]}\)</span> sont nuls, donc tous les coefficients <em class="emphasis">imapirs</em> sont nuls; et donc  <span class="process-math">\(0_{\R[X]} \in F\text{.}\)</span>
+</div></li>
+</ul>
+</li>
+<li data-component="answer" id="_opt_c"><div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-1-1">
+<span class="process-math">\(F\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(F\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-1">Si, <span class="process-math">\(F\)</span> est stable par somme.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-2">Prenons deux polynômes <span class="process-math">\(P\)</span> et <span class="process-math">\(Q\)</span> appartenant à <span class="process-math">\(F\text{,}\)</span> et montrons de deux manières différents que <span class="process-math">\(P+Q \in F\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-3">
+<dfn class="terminology">Preuve :</dfn> Puisque <span class="process-math">\(P\in F\text{,}\)</span> on a <span class="process-math">\(\deg(P)\leq 4\text{,}\)</span> donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-4">
+\begin{equation*}
+P(X) = a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-5">et de plus les coefficients impairs sont nuls: <span class="process-math">\(a_1=a_3=0\text{;}\)</span> donc en fin de compte,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-6">
+\begin{equation*}
+P(X) = a_4X^4 + a_2X^2 + a_0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-7">De même, puisque <span class="process-math">\(Q\in F\text{,}\)</span> on a</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-8">
+\begin{equation*}
+Q(X) = b_4X^4 + b_2X^2 + b_0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-9">et du coup</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-10">
+\begin{equation*}
+P(X)+Q(X)=(a_4+b_4)X^4 +(a_2+b_2)X^2+ (a_0+b_0)
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-3-2-11">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(P+Q\)</span> est de degré <span class="process-math">\(\leq 4\)</span> et n’a pas de coefficient impair, donc <span class="process-math">\(P+Q\in F\text{.}\)</span>
+</div> </li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-4-1-1">
+<span class="process-math">\(F\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(F\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-1">Si, <span class="process-math">\(F\)</span> est stable par multiplication scalaire.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-2">Prenons un polynôme <span class="process-math">\(P\)</span> appartenant à <span class="process-math">\(F\)</span> et un réel <span class="process-math">\(\lambda\text{,}\)</span> et montrons de deux manières différents que <span class="process-math">\(\lambda P \in F\text{.}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-3">
+<dfn class="terminology">Preuve:</dfn> Puisque <span class="process-math">\(P\in F\text{,}\)</span> on a <span class="process-math">\(\deg(P)\leq 4\text{,}\)</span> donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-4">
+\begin{equation*}
+P(X) = a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0,
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-5">et de plus les coefficients impairs sont nuls: <span class="process-math">\(a_1=a_3=0\text{;}\)</span> donc en fin de compte,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-6">
+\begin{equation*}
+P(X) = a_4X^4 + a_2X^2 + a_0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-7">et du coup</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-8">
+\begin{equation*}
+\lambda P(X)=(\lambda a_4)X^4 +(\lambda a_2)X^2+ (\lambda a_0)
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-7-2-4-2-9">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(\lambda P\)</span> est de degré <span class="process-math">\(\leq 4\)</span> et n’a pas de coefficient impair, donc <span class="process-math">\(\lambda P \in F\text{.}\)</span>
+</div> </li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 5.5"><a href="#al1-recap_chap3_ev-sev-7-3-7" title="Copy heading and permalink for Exercise 5.5" aria-label="Copy heading and permalink for Exercise 5.5">🔗</a></div></article><article class="exercise exercise-like" id="al1-recap_chap3_ev-sev-7-3-8"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-1-1">On  considère le sous-ensemble des polynômes qui sont soit pairs, soit de degré inférieur ou égal à 4 (soit les 2) :<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-8-1-2">
+\begin{equation*}
+G = \left\{ P \in E, \deg(P)\leq 4 \text{ ou } P(X) = \sum_{n} a_nX^n \text{ avec } a_{2k+1} =0 \text{ pour tout } k \in \N \right\}
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-1-3">Sélectionner la ou les affirmation(s) correctes.<div class="autopermalink" data-description="Paragraph"><a href="#al1-recap_chap3_ev-sev-7-3-8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="true">
+<li data-component="answer" id="_opt_a"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-1-1-1">
+<span class="process-math">\(G\)</span> est un s.e.v. de <span class="process-math">\(E\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_a">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-1">Non, <span class="process-math">\(G\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{:}\)</span>
+</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-2">Un s.e.v. doit être stable par somme, et <span class="process-math">\(G\)</span> ne l’est pas: si on prend par exemple <span class="process-math">\(P(X)=X\)</span> et <span class="process-math">\(Q(X)=X^{38}\text{,}\)</span> alors</div> <ul class="disc" id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-3">
+<li id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-3-1"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-3-1-1">
+<span class="process-math">\(\deg(P)=1 \leq 4\)</span> donc <span class="process-math">\(P \in G\)</span>
+</div></li>
+<li id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-3-2"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-3-2-1">
+<span class="process-math">\(Q\)</span> n’a pas de coefficient impair non nul, donc <span class="process-math">\(Q\in G\)</span>
+</div></li>
+</ul> <div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-1-2-4">Mais <span class="process-math">\(P(X)+Q(X)=X^{38}+X\text{,}\)</span> donc <span class="process-math">\(\deg(P+Q)=38 \gt 4\)</span> et <span class="process-math">\(P+Q\)</span> a un coefficient impair <span class="process-math">\(a_1=1\text{.}\)</span> Donc <span class="process-math">\(P+Q\notin G\)</span> et donc <span class="process-math">\(G\)</span> n’est pas stable par somme.</div>
+</li>
+<li data-component="answer" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-2-1-1">
+<span class="process-math">\(G\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(0_{\R[X]} \notin G\text{.}\)</span>
+</div></li>
+<li data-component="feedback" id="_opt_b"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-2-2-1">Si, le polynôme nul <span class="process-math">\(0_{\R[X]}\)</span> appartient à <span class="process-math">\(G\text{:}\)</span> <span class="process-math">\(\deg(0_{\R[X]}) \lt 4\text{,}\)</span> donc <span class="process-math">\(0_{\R[X]} \in G\)</span> <details class="ptx-footnote" aria-live="polite" id="al1-recap_chap3_ev-sev-7-3-8-2-2-2-1-5"><summary class="ptx-footnote__number" title="Footnote 5.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="al1-recap_chap3_ev-sev-7-3-8-2-2-2-1-5">(et, en plus, <span class="process-math">\(0_{\R[X]}\)</span> n’a pas de coefficient impair, donc <span class="process-math">\(0_{\R[X]}\)</span> appartient doublement à <span class="process-math">\(G\)</span> !)</div></details>.</div></li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-3-1-1">
+<span class="process-math">\(G\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(G\)</span> n’est pas stable par somme.</div></li>
+<li data-component="feedback" id="_opt_c">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-1">Exactement !</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-2">Par exemple, si on prend  <span class="process-math">\(P(X)=X\)</span> et <span class="process-math">\(Q(X)=X^{38}\text{,}\)</span> alors</div> <ul class="disc" id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-3">
+<li id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-3-1"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-3-1-1">
+<span class="process-math">\(\deg(P)=1 \leq 4\)</span> donc <span class="process-math">\(P \in G\)</span>
+</div></li>
+<li id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-3-2"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-3-2-1">
+<span class="process-math">\(Q\)</span> n’a pas de coefficient impair non nul, donc <span class="process-math">\(Q\in G\)</span>
+</div></li>
+</ul> <div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-3-2-4">Mais <span class="process-math">\(P(X)+Q(X)=X^{38}+X\text{,}\)</span> donc <span class="process-math">\(\deg(P+Q)=38 \gt 4\)</span> et <span class="process-math">\(P+Q\)</span> a un coefficient impair <span class="process-math">\(a_1=1\text{.}\)</span> Donc <span class="process-math">\(P+Q\notin G\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="_opt_d"><div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-1-1">
+<span class="process-math">\(G\)</span> n’est pas un s.e.v. de <span class="process-math">\(E\text{,}\)</span> car <span class="process-math">\(G\)</span> n’est pas stable par multiplication scalaire.</div></li>
+<li data-component="feedback" id="_opt_d">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-1">Si, <span class="process-math">\(G\)</span> est stable par multiplication scalaire:</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-2">Prenons <span class="process-math">\(P\in G\)</span> et <span class="process-math">\(\lambda \in \R\text{.}\)</span> Alors il y a deux possibilités:</div> <ul class="disc" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3">
+<li id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-1">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-1-1">Soit <span class="process-math">\(\deg( P )\leq 4\text{,}\)</span> et dans ce cas <span class="process-math">\(P\)</span> s’écrit</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-1-2">
+\begin{equation*}
+P(X)= a_4X^4 + a_3X^3+a_2X^2 +a_1 X + a_0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-1-3">avec des coefficients réels <span class="process-math">\(a_0,a_1,a_2,a_3,a_4\)</span> (éventuellement nuls). Mais du coup,</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-1-4">
+\begin{equation*}
+\lambda P(X)= \lambda a_4X^4 + \lambda a_3X^3+\lambda a_2X^2 +\lambda a_1 X + \lambda a_0
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-1-5">
+<span class="process-math">\(\leadsto\)</span> <span class="process-math">\(\deg(\lambda P)\leq 4\text{,}\)</span> donc <span class="process-math">\(\lambda P \in G\text{.}\)</span>
+</div>
+</li>
+<li id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-2">
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-2-1">Ou alors <span class="process-math">\(P\)</span> n’a pas de coefficient impair non nul:</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-2-2">
+\begin{equation*}
+P(X)=\sum_{n} a_nX^n \text{ avec } a_{2k+1} =0 \text{ pour tout } k \in \N
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-2-3">et donc</div>
+<div class="displaymath process-math" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-2-4">
+\begin{equation*}
+\lambda P(X)=\sum_{n} (\lambda a_n)X^n
+\end{equation*}
+</div>
+<div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-3-2-5">et donc les coefficients impairs de <span class="process-math">\(\lambda P\)</span> donnent <span class="process-math">\(\lambda a_{2k+1} = \lambda\cdot 0 =0\text{,}\)</span> donc <span class="process-math">\(\lambda P\)</span> non plus n’a pas de coefficients impairs. Et donc <span class="process-math">\(\lambda P \in G\text{.}\)</span>
+</div>
+</li>
+</ul> <div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-4">Dans tous les cas, <span class="process-math">\(\lambda P \in G\text{,}\)</span> et donc <span class="process-math">\(G\)</span> est stable par multiplication scalaire.</div> <div class="para" id="al1-recap_chap3_ev-sev-7-3-8-2-4-2-5">Mais ça ne suffit pas pour être un s.e.v !</div>
+</li>
+</ul>
+</div></div>
+<div class="autopermalink" data-description="Exercise 5.6"><a href="#al1-recap_chap3_ev-sev-7-3-8" title="Copy heading and permalink for Exercise 5.6" aria-label="Copy heading and permalink for Exercise 5.6">🔗</a></div></article><div class="autopermalink" data-description="Exercice 5: Sous-espaces vectoriels de \R[X]"><a href="#al1-recap_chap3_ev-sev-7-3" title="Copy heading and permalink for Exercice 5: Sous-espaces vectoriels de \R[X]" aria-label="Copy heading and permalink for Exercice 5: Sous-espaces vectoriels de \R[X]">🔗</a></div></section><div class="autopermalink" data-description="Section 5: —SEV Niveau 4"><a href="#al1-recap_chap3_ev-sev-7" title="Copy heading and permalink for Section 5: —SEV Niveau 4" aria-label="Copy heading and permalink for Section 5: —SEV Niveau 4">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="al1-recap_chap3_ev-sev-6.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="al1-recap_chap3_ev-sev-8.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
